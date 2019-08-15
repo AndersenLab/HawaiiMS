@@ -159,3 +159,6 @@ system(glue::glue("python scripts/vcf2phylip.py -i data/ANNOTATE_VCF/Hawaii.vcf.
 # #bind all dataframes
 # rbind(k3df, k4df, k5df) %>%
 #   readr::write_csv('data/elife_files/supp-fig11-data1.csv')
+# #ADMIXTURE subsampling data for ploting cross validation (CV) error with Hawaiian isolates only
+# k_summary %>%
+#   readr::write_csv('data/elife_files/supp-fig11-data2.csv')
