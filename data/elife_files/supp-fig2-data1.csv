@@ -1,0 +1,73 @@
+c_label,species_id,worms_on_sample,approximate_number_of_worms,males_observed,latitude,longitude,island,substrate,landscape,sky_view,gridsect,gridsect_number,gridsect_direction,gridsect_radius,substrate_temperature,substrate_moisture,ambient_humidity,ambient_temperature,altitude,date,time,photo_url_thumb,fixed_substrate
+C-0065,"C.
+oiwi",Yes,Proliferating (25+),no,21.349858,-157.805975,Oahu,Rotting flower,Wild forest,Obstructed,no,NA,NA,NA,21.8,46,77.8,24,322.8517588,2017-08-03,09:15:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-0065.thumb.jpg,Flower
+C-0065,"C.
+briggsae",Yes,Proliferating (25+),no,21.349858,-157.805975,Oahu,Rotting flower,Wild forest,Obstructed,no,NA,NA,NA,21.8,46,77.8,24,322.8517588,2017-08-03,09:15:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-0065.thumb.jpg,Flower
+C-0271,"Oscheius
+sp.",Yes,Few (4-10),no,22.081467,-159.426286,Kauai,Leaf litter,Wild forest,Obstructed,yes,9,D,2,23,59,77.5,24.9,281.0586957,2017-08-09,11:48:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-0271.thumb.jpg,Leaf litter
+C-0271,"C.
+briggsae",Yes,Few (4-10),no,22.081467,-159.426286,Kauai,Leaf litter,Wild forest,Obstructed,yes,9,D,2,23,59,77.5,24.9,281.0586957,2017-08-09,11:48:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-0271.thumb.jpg,Leaf litter
+C-0271,"C.
+briggsae",Yes,Few (4-10),no,22.081467,-159.426286,Kauai,Leaf litter,Wild forest,Obstructed,yes,9,D,2,23,59,77.5,24.9,281.0586957,2017-08-09,11:48:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-0271.thumb.jpg,Leaf litter
+C-0314,"C.
+briggsae",Yes,Proliferating (25+),no,22.198956,-159.476047,Kauai,Leaf litter,Wild forest,Partially Obstructed,no,NA,NA,NA,29.2,64.5,82.2,26.33333333333334,108.8898551,2017-08-10,09:08:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-0314.thumb.jpg,Leaf litter
+C-0314,"Oscheius
+sp.",Yes,Proliferating (25+),no,22.198956,-159.476047,Kauai,Leaf litter,Wild forest,Partially Obstructed,no,NA,NA,NA,29.2,64.5,82.2,26.33333333333334,108.8898551,2017-08-10,09:08:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-0314.thumb.jpg,Leaf litter
+C-0343,"Teratorhabditis
+sp.",Yes,Proliferating (25+),no,20.94835,-156.536372,Maui,Fungus,Wild forest,Partially Obstructed,no,NA,NA,NA,22.8,65,82.5,25.3,439.7731959,2017-08-13,15:55:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-0343.thumb.jpg,Fungus
+C-0343,"C.
+briggsae",Yes,Proliferating (25+),no,20.94835,-156.536372,Maui,Fungus,Wild forest,Partially Obstructed,no,NA,NA,NA,22.8,65,82.5,25.3,439.7731959,2017-08-13,15:55:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-0343.thumb.jpg,Fungus
+C-0380,"C.
+briggsae",Yes,Proliferating (25+),no,20.807406,-156.096654,Maui,Fruit/nut/vegetable,Wild forest,Partially Obstructed,no,NA,NA,NA,25.4,69,81.2,24.3,291,2017-08-15,10:10:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-0380.thumb.jpg,Fruit/nut/veg
+C-0380,"C.
+tropicalis",Yes,Proliferating (25+),no,20.807406,-156.096654,Maui,Fruit/nut/vegetable,Wild forest,Partially Obstructed,no,NA,NA,NA,25.4,69,81.2,24.3,291,2017-08-15,10:10:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-0380.thumb.jpg,Fruit/nut/veg
+C-0380,"C.
+briggsae",Yes,Proliferating (25+),no,20.807406,-156.096654,Maui,Fruit/nut/vegetable,Wild forest,Partially Obstructed,no,NA,NA,NA,25.4,69,81.2,24.3,291,2017-08-15,10:10:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-0380.thumb.jpg,Fruit/nut/veg
+C-0380,"C.
+briggsae",Yes,Proliferating (25+),no,20.807406,-156.096654,Maui,Fruit/nut/vegetable,Wild forest,Partially Obstructed,no,NA,NA,NA,25.4,69,81.2,24.3,291,2017-08-15,10:10:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-0380.thumb.jpg,Fruit/nut/veg
+C-0380,"C.
+tropicalis",Yes,Proliferating (25+),no,20.807406,-156.096654,Maui,Fruit/nut/vegetable,Wild forest,Partially Obstructed,no,NA,NA,NA,25.4,69,81.2,24.3,291,2017-08-15,10:10:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-0380.thumb.jpg,Fruit/nut/veg
+C-0380,"C.
+briggsae",Yes,Proliferating (25+),no,20.807406,-156.096654,Maui,Fruit/nut/vegetable,Wild forest,Partially Obstructed,no,NA,NA,NA,25.4,69,81.2,24.3,291,2017-08-15,10:10:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-0380.thumb.jpg,Fruit/nut/veg
+C-1369,"Choriorhabditis
+sp.",Yes,Some (11-25),no,20.681872,-156.337064,Maui,Leaf litter,Wild forest,Partially Obstructed,no,NA,NA,NA,15.1,68,93.4,17.1,1670.086207,2017-08-14,11:38:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-1369.thumb.jpg,Leaf litter
+C-1369,"C.
+briggsae",Yes,Some (11-25),no,20.681872,-156.337064,Maui,Leaf litter,Wild forest,Partially Obstructed,no,NA,NA,NA,15.1,68,93.4,17.1,1670.086207,2017-08-14,11:38:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-1369.thumb.jpg,Leaf litter
+C-1369,"Choriorhabditis
+sp.",Yes,Some (11-25),no,20.681872,-156.337064,Maui,Leaf litter,Wild forest,Partially Obstructed,no,NA,NA,NA,15.1,68,93.4,17.1,1670.086207,2017-08-14,11:38:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-1369.thumb.jpg,Leaf litter
+C-1513,"Panagrolaimus
+sp.",Yes,Some (11-25),no,20.675109,-156.036111,Maui,Leaf litter,Wild forest,Partially Obstructed,no,NA,NA,NA,25.1,66,73.3,27,106,2017-08-17,16:59:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-1513.thumb.jpg,Leaf litter
+C-1513,"Panagrolaimus
+sp.",Yes,Some (11-25),no,20.675109,-156.036111,Maui,Leaf litter,Wild forest,Partially Obstructed,no,NA,NA,NA,25.1,66,73.3,27,106,2017-08-17,16:59:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-1513.thumb.jpg,Leaf litter
+C-1513,"C.
+briggsae",Yes,Some (11-25),no,20.675109,-156.036111,Maui,Leaf litter,Wild forest,Partially Obstructed,no,NA,NA,NA,25.1,66,73.3,27,106,2017-08-17,16:59:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-1513.thumb.jpg,Leaf litter
+C-2756,"Panagrolaimus
+sp.",Yes,Proliferating (25+),no,19.697617,-155.975908,Big Island,Leaf litter,Wild forest,Partially Obstructed,no,NA,NA,NA,23.2,38,71.3,24.66666666666667,463.9475138,2017-08-15,13:31:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-2756.thumb.jpg,Leaf litter
+C-2756,"Panagrolaimus
+sp.",Yes,Proliferating (25+),no,19.697617,-155.975908,Big Island,Leaf litter,Wild forest,Partially Obstructed,no,NA,NA,NA,23.2,38,71.3,24.66666666666667,463.9475138,2017-08-15,13:31:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-2756.thumb.jpg,Leaf litter
+C-2756,"C.
+briggsae",Yes,Proliferating (25+),no,19.697617,-155.975908,Big Island,Leaf litter,Wild forest,Partially Obstructed,no,NA,NA,NA,23.2,38,71.3,24.66666666666667,463.9475138,2017-08-15,13:31:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-2756.thumb.jpg,Leaf litter
+C-2857,"C.
+briggsae",Yes,Proliferating (25+),no,19.590717,-155.067906,Big Island,Leaf litter,Agricultural land,Partially Obstructed,no,NA,NA,NA,26.6,68.5,65.5,28.8,246.0480769,2017-08-13,15:39:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-2857.thumb.jpg,Leaf litter
+C-2857,"C.
+briggsae",Yes,Proliferating (25+),no,19.590717,-155.067906,Big Island,Leaf litter,Agricultural land,Partially Obstructed,no,NA,NA,NA,26.6,68.5,65.5,28.8,246.0480769,2017-08-13,15:39:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-2857.thumb.jpg,Leaf litter
+C-2857,"C.
+briggsae",Yes,Proliferating (25+),no,19.590717,-155.067906,Big Island,Leaf litter,Agricultural land,Partially Obstructed,no,NA,NA,NA,26.6,68.5,65.5,28.8,246.0480769,2017-08-13,15:39:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-2857.thumb.jpg,Leaf litter
+C-2857,"C.
+tropicalis",Yes,Proliferating (25+),no,19.590717,-155.067906,Big Island,Leaf litter,Agricultural land,Partially Obstructed,no,NA,NA,NA,26.6,68.5,65.5,28.8,246.0480769,2017-08-13,15:39:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-2857.thumb.jpg,Leaf litter
+C-3010,"Rhabditis
+terricola",Yes,Few (4-10),no,19.429439,-155.261608,Big Island,Leaf litter,Wild forest,Partially Obstructed,no,NA,NA,NA,17.4,72,82.8,21.9,1169.283019,2017-08-14,11:56:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-3010.thumb.jpg,Leaf litter
+C-3010,"Panagrolaimus
+sp.",Yes,Few (4-10),no,19.429439,-155.261608,Big Island,Leaf litter,Wild forest,Partially Obstructed,no,NA,NA,NA,17.4,72,82.8,21.9,1169.283019,2017-08-14,11:56:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-3010.thumb.jpg,Leaf litter
+C-3098,"Oscheius
+sp.",Yes,Few (4-10),no,20.0656,-155.520633,Big Island,Leaf litter,Wild forest,Partially Obstructed,no,NA,NA,NA,24.2,69,61,26.7,681.1035857,2017-08-17,11:48:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-3098.thumb.jpg,Leaf litter
+C-3098,"Oscheius
+sp.",Yes,Few (4-10),no,20.0656,-155.520633,Big Island,Leaf litter,Wild forest,Partially Obstructed,no,NA,NA,NA,24.2,69,61,26.7,681.1035857,2017-08-17,11:48:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-3098.thumb.jpg,Leaf litter
+C-3098,"Heterohabditis
+zealandica",Yes,Few (4-10),no,20.0656,-155.520633,Big Island,Leaf litter,Wild forest,Partially Obstructed,no,NA,NA,NA,24.2,69,61,26.7,681.1035857,2017-08-17,11:48:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-3098.thumb.jpg,Leaf litter
+C-3266,"C.
+elegans",Yes,Some (11-25),no,19.115886,-155.818386,Big Island,Rotting wood,Wild forest,Full,no,NA,NA,NA,20.4,42,76.3,25.388888888888893,651.7065217,2017-08-15,09:52:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-3266.thumb.jpg,Other
+C-3266,"Oscheius
+sp.",Yes,Some (11-25),no,19.115886,-155.818386,Big Island,Rotting wood,Wild forest,Full,no,NA,NA,NA,20.4,42,76.3,25.388888888888893,651.7065217,2017-08-15,09:52:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-3266.thumb.jpg,Other
+C-3266,"C.
+elegans",Yes,Some (11-25),no,19.115886,-155.818386,Big Island,Rotting wood,Wild forest,Full,no,NA,NA,NA,20.4,42,76.3,25.388888888888893,651.7065217,2017-08-15,09:52:00,https://storage.googleapis.com/elegansvariation.org/photos/hawaii2017/C-3266.thumb.jpg,Other

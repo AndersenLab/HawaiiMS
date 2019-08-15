@@ -1,0 +1,11 @@
+x,y,pearson_correlation
+altitude,substrate_temperature,-0.8104600933946831
+altitude,substrate_moisture,0.12407988991874566
+altitude,ambient_humidity,0.20163805551693492
+altitude,ambient_temperature,-0.7206455666659823
+ambient_humidity,substrate_temperature,-0.41168435513762985
+ambient_humidity,substrate_moisture,0.27210425433667806
+ambient_temperature,substrate_temperature,0.8105251574970693
+ambient_temperature,substrate_moisture,-0.2284680352860203
+ambient_temperature,ambient_humidity,-0.6737237352250858
+substrate_moisture,substrate_temperature,-0.12163402319609506
