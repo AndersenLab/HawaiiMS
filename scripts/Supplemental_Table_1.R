@@ -98,7 +98,7 @@ Suppl_table_X <- data1 %>%
   dplyr::summarize(count=as.integer(n())) %>%
   tidyr::spread(island, count, fill=0) %>%
   janitor::adorn_totals('row') %>%
-  janitor::adorn_totals('col') # %>% readr::write_tsv("data/elife_files/supp-tableX.csv")
+  janitor::adorn_totals('col') # %>% readr::write_csv("data/elife_files/supp-tableX.csv")
 
 # Island enrichment analysis
 # shape data for analysis for each Caenorhabditis species
