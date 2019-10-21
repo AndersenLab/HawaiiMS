@@ -711,13 +711,440 @@ C-3489,No Nematode,Big Island,NA,NA,No,-155.09325,19.772678,no
 C-3501,No Nematode,Big Island,NA,NA,No,-155.102489,19.811206,no
 C-3510,No Nematode,Big Island,NA,NA,No,-155.217781,19.954828,no
 C-3521,No Nematode,Big Island,NA,NA,No,-155.154472,19.921528,no
-C-0008,Not genotyped,Oahu,NA,NA,Tracks,-157.722289,21.307517,no
-C-0014,Not genotyped,Oahu,NA,NA,Tracks,-157.721019,21.311314,no
+C-0008,Tracks only,Oahu,NA,NA,Tracks,-157.722289,21.307517,no
+C-0014,Tracks only,Oahu,NA,NA,Tracks,-157.721019,21.311314,no
+C-0027,Tracks only,Oahu,NA,NA,Tracks,-157.801125,21.333292,no
+C-0036,Tracks only,Oahu,NA,NA,Tracks,-157.803325,21.381903,no
+C-0056,Tracks only,Oahu,NA,NA,Tracks,-157.721964,21.308586,no
+C-0059,Tracks only,Oahu,NA,NA,Tracks,-157.799636,21.336539,no
+C-0070,Tracks only,Oahu,NA,NA,Tracks,-157.779636,21.362181,no
+C-0071,Tracks only,Oahu,NA,NA,Tracks,-157.806342,21.351047,no
+C-0075,Tracks only,Oahu,NA,NA,Tracks,-157.779928,21.364875,no
+C-0088,Tracks only,Oahu,NA,NA,Tracks,-158.017142,21.503544,no
+C-0112,Tracks only,Kauai,NA,NA,Tracks,-159.596392,22.203839,no
+C-0114,Tracks only,Kauai,NA,NA,Tracks,-159.597381,22.206706,no
+C-0122,Tracks only,Kauai,NA,NA,Tracks,-159.587122,22.217614,no
+C-0124,Tracks only,Kauai,NA,NA,Tracks,-159.621222,22.151731,no
+C-0129,Tracks only,Kauai,NA,NA,Tracks,-159.621469,22.151492,no
+C-0143,Tracks only,Kauai,NA,NA,Tracks,-159.604683,22.148044,no
+C-0149,Tracks only,Kauai,NA,NA,Tracks,-159.628208,22.148258,no
+C-0152,Tracks only,Kauai,NA,NA,Tracks,-159.617267,22.147536,no
+C-0154,Tracks only,Kauai,NA,NA,Tracks,-159.660394,22.131372,no
+C-0162,Tracks only,Kauai,NA,NA,Tracks,-159.649164,22.141331,no
+C-0164,Tracks only,Kauai,NA,NA,Tracks,-159.597819,22.156056,no
+C-0165,Tracks only,Kauai,NA,NA,Tracks,-159.604289,22.148608,no
+C-0170,Tracks only,Kauai,NA,NA,Tracks,-159.611217,22.146197,no
+C-0181,Tracks only,Kauai,NA,NA,Tracks,-159.300636,22.117747,no
+C-0191,Tracks only,Kauai,NA,NA,Tracks,-159.402975,22.201536,no
+C-0199,Tracks only,Kauai,NA,NA,Tracks,-159.589703,22.214272,no
+C-0207,Tracks only,Kauai,NA,NA,Tracks,-159.597194,22.207375,no
+C-0229,Tracks only,Kauai,NA,NA,Tracks,-159.6421812,22.1499193,no
+C-0235,Tracks only,Kauai,NA,NA,Tracks,-159.640969,22.133458,no
+C-0259,Tracks only,Kauai,NA,NA,Tracks,-159.423044,22.078728,no
+C-0268,Tracks only,Kauai,NA,NA,Tracks,-159.375603,22.100686,no
+C-0269,Tracks only,Kauai,NA,NA,Tracks,-159.386672,22.102539,no
+C-0274,Tracks only,Kauai,NA,NA,Tracks,-159.387669,22.103158,no
+C-0296,Tracks only,Kauai,NA,NA,Tracks,-159.426014,22.081606,no
+C-0307,Tracks only,Maui,NA,NA,Tracks,-156.535021,20.950026,no
+C-0327,Tracks only,Maui,NA,NA,Tracks,-156.535331,20.949403,no
+C-0336,Tracks only,Maui,NA,NA,Tracks,-156.335833,20.670575,no
+C-0342,Tracks only,Maui,NA,NA,Tracks,-156.532844,20.952117,no
+C-0347,Tracks only,Maui,NA,NA,Tracks,-156.536511,20.948803,no
+C-0381,Tracks only,Maui,NA,NA,Tracks,-156.332556,20.6759,no
+C-0384,Tracks only,Maui,NA,NA,Tracks,-156.097159,20.80732,no
+C-0385,Tracks only,Maui,NA,NA,Tracks,-156.333278,20.674186,no
+C-0388,Tracks only,Maui,NA,NA,Tracks,-156.097072,20.807294,no
+C-0389,Tracks only,Maui,NA,NA,Tracks,-156.332317,20.672508,no
+C-0393,Tracks only,Maui,NA,NA,Tracks,-156.333072,20.674875,no
+C-0401,Tracks only,Maui,NA,NA,Tracks,-156.332306,20.676389,no
+C-0404,Tracks only,Maui,NA,NA,Tracks,-156.095849,20.807562,no
+C-0407,Tracks only,Maui,NA,NA,Tracks,-156.003034,20.779735,no
+C-0417,Tracks only,Maui,NA,NA,Tracks,-156.332561,20.672228,no
+C-0425,Tracks only,Kauai,NA,NA,Tracks,-159.421236,22.075144,no
+C-0447,Tracks only,Kauai,NA,NA,Tracks,-159.415408,22.073392,no
+C-0449,Tracks only,Kauai,NA,NA,Tracks,-159.414131,22.075181,no
+C-0465,Tracks only,Kauai,NA,NA,Tracks,-159.656158,22.123408,no
+C-0470,Tracks only,Kauai,NA,NA,Tracks,-159.655375,22.124456,no
+C-0475,Tracks only,Kauai,NA,NA,Tracks,-159.616936,22.152792,no
+C-0485,Tracks only,Kauai,NA,NA,Tracks,-159.64138,22.149054,no
+C-0486,Tracks only,Kauai,NA,NA,Tracks,-159.641363,22.149121,no
+C-0487,Tracks only,Kauai,NA,NA,Tracks,-159.641396,22.149134,no
+C-0490,Tracks only,Kauai,NA,NA,Tracks,-159.641364,22.149101,no
+C-0492,Tracks only,Kauai,NA,NA,Tracks,-159.641349,22.149104,no
+C-0501,Tracks only,Kauai,NA,NA,Tracks,-159.617265,22.153389,no
+C-0509,Tracks only,Kauai,NA,NA,Tracks,-159.600203,22.152025,no
+C-0522,Tracks only,Kauai,NA,NA,Tracks,-159.660422,22.131483,no
+C-0563,Tracks only,Molokai,NA,NA,Tracks,-156.965661,21.138192,no
+C-0564,Tracks only,Maui,NA,NA,Tracks,-156.179811,20.870576,no
+C-0572,Tracks only,Kauai,NA,NA,Tracks,-159.6228463,22.15004209,no
+C-0580,Tracks only,Kauai,NA,NA,Tracks,-159.616136,22.151857,no
+C-0589,Tracks only,Kauai,NA,NA,Tracks,-159.664386,22.121912,no
+C-0592,Tracks only,Kauai,NA,NA,Tracks,-159.661536,22.134031,no
+C-0606,Tracks only,Kauai,NA,NA,Tracks,-159.670014,22.086264,no
+C-0610,Tracks only,Kauai,NA,NA,Tracks,-159.6172,22.153261,no
+C-0614,Tracks only,Kauai,NA,NA,Tracks,-159.664469,22.121839,no
+C-0618,Tracks only,Kauai,NA,NA,Tracks,-159.7087518,22.12394834,no
+C-0621,Tracks only,Maui,NA,NA,Tracks,-156.515413,20.88202,no
+C-0629,Tracks only,Molokai,NA,NA,Tracks,-157.008278,21.175608,no
+C-0630,Tracks only,Molokai,NA,NA,Tracks,-157.008285,21.175636,no
+C-0634,Tracks only,Molokai,NA,NA,Tracks,-157.008278,21.175678,no
+C-0635,Tracks only,Molokai,NA,NA,Tracks,-157.008403,21.175631,no
+C-0638,Tracks only,Molokai,NA,NA,Tracks,-157.008275,21.175514,no
+C-0641,Tracks only,Molokai,NA,NA,Tracks,-157.008225,21.175617,no
+C-0644,Tracks only,Molokai,NA,NA,Tracks,-157.00505,21.176078,no
+C-0646,Tracks only,Molokai,NA,NA,Tracks,-156.96595,21.137981,no
+C-0649,Tracks only,Kauai,NA,NA,Tracks,-159.645311,22.128939,no
+C-0655,Tracks only,Kauai,NA,NA,Tracks,-159.660481,22.131611,no
+C-0660,Tracks only,Kauai,NA,NA,Tracks,-159.660369,22.131403,no
+C-0661,Tracks only,Kauai,NA,NA,Tracks,-159.652769,22.141961,no
+C-0663,Tracks only,Kauai,NA,NA,Tracks,-159.653425,22.142539,no
+C-0664,Tracks only,Kauai,NA,NA,Tracks,-159.654581,22.143375,no
+C-0667,Tracks only,Kauai,NA,NA,Tracks,-159.649608,22.127789,no
+C-0672,Tracks only,Kauai,NA,NA,Tracks,-159.66035,22.130597,no
+C-0685,Tracks only,Kauai,NA,NA,Tracks,-159.654592,22.1244,no
+C-0689,Tracks only,Kauai,NA,NA,Tracks,-159.660439,22.131511,no
+C-0690,Tracks only,Kauai,NA,NA,Tracks,-159.661711,22.133697,no
+C-0691,Tracks only,Kauai,NA,NA,Tracks,-159.661194,22.133914,no
+C-0693,Tracks only,Kauai,NA,NA,Tracks,-159.660094,22.131889,no
+C-0700,Tracks only,Kauai,NA,NA,Tracks,-159.417442,22.071342,no
+C-0701,Tracks only,Kauai,NA,NA,Tracks,-159.417475,22.071322,no
+C-0718,Tracks only,Kauai,NA,NA,Tracks,-159.413875,22.069681,no
+C-0723,Tracks only,Kauai,NA,NA,Tracks,-159.660239,22.131089,no
+C-0724,Tracks only,Kauai,NA,NA,Tracks,-159.664794,22.039261,no
+C-0728,Tracks only,Kauai,NA,NA,Tracks,-159.660453,22.131475,no
+C-0732,Tracks only,Kauai,NA,NA,Tracks,-159.659644,22.129331,no
+C-0734,Tracks only,Molokai,NA,NA,Tracks,-156.969036,21.138911,no
+C-0735,Tracks only,Molokai,NA,NA,Tracks,-156.965903,21.138025,no
+C-0740,Tracks only,Kauai,NA,NA,Tracks,-159.643672,22.136664,no
+C-0751,Tracks only,Kauai,NA,NA,Tracks,-159.642153,22.127217,no
+C-0755,Tracks only,Molokai,NA,NA,Tracks,-157.005463,21.177075,no
+C-0757,Tracks only,Molokai,NA,NA,Tracks,-157.005458,21.177017,no
+C-0768,Tracks only,Molokai,NA,NA,Tracks,-157.005388,21.177006,no
+C-0773,Tracks only,Molokai,NA,NA,Tracks,-157.005392,21.175617,no
+C-0795,Tracks only,Kauai,NA,NA,Tracks,-159.434636,22.092728,no
+C-0808,Tracks only,Kauai,NA,NA,Tracks,-159.642197,22.150047,no
+C-0811,Tracks only,Kauai,NA,NA,Tracks,-159.641369,22.149108,no
+C-0814,Tracks only,Kauai,NA,NA,Tracks,-159.640092,22.147681,no
+C-0819,Tracks only,Kauai,NA,NA,Tracks,-159.641372,22.149067,no
+C-0826,Tracks only,Kauai,NA,NA,Tracks,-159.639708,22.147056,no
+C-0845,Tracks only,Kauai,NA,NA,Tracks,-159.392014,22.104131,no
+C-0856,Tracks only,Maui,NA,NA,Tracks,-156.333333,20.672456,no
+C-0858,Tracks only,Kauai,NA,NA,Tracks,-159.3889,22.104111,no
+C-0860,Tracks only,Maui,NA,NA,Tracks,-156.334956,20.672531,no
+C-0869,Tracks only,Maui,NA,NA,Tracks,-156.5158585,20.881462,no
+C-0940,Tracks only,Kauai,NA,NA,Tracks,-159.477658,22.197208,no
+C-0944,Tracks only,Maui,NA,NA,Tracks,-156.332683,20.6734,no
+C-0947,Tracks only,Maui,NA,NA,Tracks,-156.186233,20.874608,no
+C-0952,Tracks only,Maui,NA,NA,Tracks,-156.332628,20.672069,no
+C-0956,Tracks only,Maui,NA,NA,Tracks,-156.333225,20.673917,no
+C-0960,Tracks only,Maui,NA,NA,Tracks,-156.332928,20.673633,no
+C-1049,Tracks only,Kauai,NA,NA,Tracks,-159.390044,22.103925,no
+C-1062,Tracks only,Molokai,NA,NA,Tracks,-156.96571,21.138285,no
+C-1071,Tracks only,Kauai,NA,NA,Tracks,-159.417439,22.071211,no
+C-1078,Tracks only,Kauai,NA,NA,Tracks,-159.41538145000342,22.07341009000214,no
+C-1095,Tracks only,Maui,NA,NA,Tracks,-156.332514,20.676283,no
+C-1096,Tracks only,Maui,NA,NA,Tracks,-156.332711,20.675267,no
+C-1098,Tracks only,Maui,NA,NA,Tracks,-156.332614,20.67575,no
+C-1100,Tracks only,Maui,NA,NA,Tracks,-156.331528,20.676867,no
+C-1104,Tracks only,Maui,NA,NA,Tracks,-156.331294,20.676867,no
+C-1118,Tracks only,Maui,NA,NA,Tracks,-156.536167,20.949358,no
+C-1119,Tracks only,Maui,NA,NA,Tracks,-156.535508,20.949847,no
+C-1120,Tracks only,Maui,NA,NA,Tracks,-156.535217,20.949489,no
+C-1122,Tracks only,Maui,NA,NA,Tracks,-156.536928,20.949744,no
+C-1124,Tracks only,Maui,NA,NA,Tracks,-156.5362,20.949294,no
+C-1128,Tracks only,Maui,NA,NA,Tracks,-156.535369,20.949372,no
+C-1131,Tracks only,Maui,NA,NA,Tracks,-156.535381,20.949378,no
+C-1133,Tracks only,Maui,NA,NA,Tracks,-156.535339,20.949406,no
+C-1137,Tracks only,Maui,NA,NA,Tracks,-156.535319,20.949419,no
+C-1138,Tracks only,Maui,NA,NA,Tracks,-156.535317,20.949419,no
+C-1145,Tracks only,Maui,NA,NA,Tracks,-156.536511,20.949757,no
+C-1157,Tracks only,Maui,NA,NA,Tracks,-156.536335,20.949722,no
+C-1158,Tracks only,Maui,NA,NA,Tracks,-156.340122,20.673144,no
+C-1164,Tracks only,Maui,NA,NA,Tracks,-156.330817,20.684014,no
+C-1165,Tracks only,Maui,NA,NA,Tracks,-156.536349,20.948754,no
+C-1166,Tracks only,Maui,NA,NA,Tracks,-156.338853,20.668914,no
+C-1168,Tracks only,Maui,NA,NA,Tracks,-156.329022,20.684544,no
+C-1169,Tracks only,Maui,NA,NA,Tracks,-156.337261,20.669481,no
+C-1176,Tracks only,Maui,NA,NA,Tracks,-156.329158,20.68225,no
+C-1184,Tracks only,Maui,NA,NA,Tracks,-156.335286,20.682447,no
+C-1187,Tracks only,Kauai,NA,NA,Tracks,-159.657136,22.122594,no
+C-1188,Tracks only,Maui,NA,NA,Tracks,-156.337161,20.68125,no
+C-1189,Tracks only,Maui,NA,NA,Tracks,-156.338747,20.669169,no
+C-1196,Tracks only,Maui,NA,NA,Tracks,-156.237008,20.767694,no
+C-1200,Tracks only,Maui,NA,NA,Tracks,-156.237116,20.767879,no
+C-1205,Tracks only,Maui,NA,NA,Tracks,-156.134572,20.830723,no
+C-1215,Tracks only,Maui,NA,NA,Tracks,-156.535322,20.949424,no
+C-1219,Tracks only,Maui,NA,NA,Tracks,-156.53532,20.949423,no
+C-1223,Tracks only,Maui,NA,NA,Tracks,-156.516971,20.881184,no
+C-1231,Tracks only,Maui,NA,NA,Tracks,-156.5156413,20.8819028,no
+C-1246,Tracks only,Maui,NA,NA,Tracks,-156.520483,20.878814,no
+C-1258,Tracks only,Maui,NA,NA,Tracks,-156.522983,20.878361,no
+C-1265,Tracks only,Maui,NA,NA,Tracks,-156.304353,20.723317,no
+C-1268,Tracks only,Maui,NA,NA,Tracks,-156.304325,20.723381,no
+C-1269,Tracks only,Maui,NA,NA,Tracks,-156.304372,20.723408,no
+C-1270,Tracks only,Maui,NA,NA,Tracks,-156.304383,20.723392,no
+C-1271,Tracks only,Maui,NA,NA,Tracks,-156.304356,20.723411,no
+C-1273,Tracks only,Maui,NA,NA,Tracks,-156.304392,20.723419,no
+C-1277,Tracks only,Maui,NA,NA,Tracks,-156.304436,20.723417,no
+C-1278,Tracks only,Maui,NA,NA,Tracks,-156.304397,20.723456,no
+C-1281,Tracks only,Maui,NA,NA,Tracks,-156.304333,20.723415,no
+C-1282,Tracks only,Maui,NA,NA,Tracks,-156.3043329,20.7234152,no
+C-1283,Tracks only,Maui,NA,NA,Tracks,-156.304034,20.723376,no
+C-1284,Tracks only,Maui,NA,NA,Tracks,-156.304322,20.723416,no
+C-1285,Tracks only,Maui,NA,NA,Tracks,-156.304335,20.723397,no
+C-1291,Tracks only,Kauai,NA,NA,Tracks,-159.674731,22.105583,no
+C-1303,Tracks only,Kauai,NA,NA,Tracks,-159.656392,22.123328,no
+C-1308,Tracks only,Maui,NA,NA,Tracks,-156.23709699999986,20.767851000000743,no
+C-1312,Tracks only,Maui,NA,NA,Tracks,-156.237023,20.767841,no
+C-1317,Tracks only,Maui,NA,NA,Tracks,-156.237011,20.767742,no
+C-1323,Tracks only,Molokai,NA,NA,Tracks,-156.965847,21.138183,no
+C-1324,Tracks only,Maui,NA,NA,Tracks,-156.237142,20.767731,no
+C-1325,Tracks only,Maui,NA,NA,Tracks,-156.338758,20.675289,no
+C-1326,Tracks only,Maui,NA,NA,Tracks,-156.335925,20.682528,no
+C-1330,Tracks only,Molokai,NA,NA,Tracks,-156.9625744,21.13895227,no
+C-1333,Tracks only,Maui,NA,NA,Tracks,-156.337953,20.676378,no
+C-1334,Tracks only,Molokai,NA,NA,Tracks,-156.962219,21.138736,no
+C-1338,Tracks only,Molokai,NA,NA,Tracks,-156.965936,21.138068,no
+C-1345,Tracks only,Maui,NA,NA,Tracks,-156.337442,20.677167,no
+C-1346,Tracks only,Molokai,NA,NA,Tracks,-156.965924,21.138029,no
+C-1350,Tracks only,Molokai,NA,NA,Tracks,-156.965692,21.13825,no
+C-1353,Tracks only,Maui,NA,NA,Tracks,-156.337178,20.678869,no
+C-1357,Tracks only,Maui,NA,NA,Tracks,-156.337425,20.679342,no
+C-1358,Tracks only,Molokai,NA,NA,Tracks,-156.965898,21.138031,no
+C-1361,Tracks only,Maui,NA,NA,Tracks,-156.337531,20.679767,no
+C-1365,Tracks only,Maui,NA,NA,Tracks,-156.3375388,20.67975544,no
+C-1375,Tracks only,Maui,NA,NA,Tracks,-156.134989,20.833459,no
+C-1393,Tracks only,Maui,NA,NA,Tracks,-156.044803,20.662875,no
+C-1399,Tracks only,Maui,NA,NA,Tracks,-156.050472,20.665292,no
+C-1403,Tracks only,Maui,NA,NA,Tracks,-156.050947,20.665419,no
+C-1404,Tracks only,Maui,NA,NA,Tracks,-156.051308,20.667172,no
+C-1464,Tracks only,Maui,NA,NA,Tracks,-156.236682,20.767667,no
+C-1466,Tracks only,Maui,NA,NA,Tracks,-156.2367228,20.7675952,no
+C-1475,Tracks only,Maui,NA,NA,Tracks,-156.324148,20.741655,no
+C-1478,Tracks only,Maui,NA,NA,Tracks,-156.323137,20.741477,no
+C-1483,Tracks only,Maui,NA,NA,Tracks,-156.278061,20.805685,no
+C-1484,Tracks only,Maui,NA,NA,Tracks,-156.278061,20.805685,no
+C-1488,Tracks only,Maui,NA,NA,Tracks,-156.278061,20.805685,no
+C-1497,Tracks only,Maui,NA,NA,Tracks,-156.323365,20.742201,no
+C-1499,Tracks only,Maui,NA,NA,Tracks,-156.323751,20.74169,no
+C-1503,Tracks only,Maui,NA,NA,Tracks,-156.323611,20.741705,no
+C-1507,Tracks only,Maui,NA,NA,Tracks,-156.278061,20.805685,no
+C-1516,Tracks only,Maui,NA,NA,Tracks,-156.049029,20.664891,no
+C-1524,Tracks only,Maui,NA,NA,Tracks,-156.043728,20.662289,no
+C-2525,Tracks only,Maui,NA,NA,Tracks,-156.053103,20.669217,no
+C-2534,Tracks only,Maui,NA,NA,Tracks,-156.045088,20.662485,no
+C-2541,Tracks only,Maui,NA,NA,Tracks,-156.053494,20.669636,no
+C-2543,Tracks only,Maui,NA,NA,Tracks,-156.1862851,20.87449836,no
+C-2569,Tracks only,Maui,NA,NA,Tracks,-156.056222,20.671519,no
+C-2595,Tracks only,Maui,NA,NA,Tracks,-156.04903,20.66489,no
+C-2600,Tracks only,Maui,NA,NA,Tracks,-156.049031,20.664811,no
+C-2613,Tracks only,Maui,NA,NA,Tracks,-156.1310363,20.8182189,no
+C-2617,Tracks only,Maui,NA,NA,Tracks,-156.136982,20.821591,no
+C-2619,Tracks only,Maui,NA,NA,Tracks,-156.137743,20.820946,no
+C-2623,Tracks only,Maui,NA,NA,Tracks,-156.134853,20.82969,no
+C-2628,Tracks only,Maui,NA,NA,Tracks,-156.353742,20.706119,no
+C-2650,Tracks only,Kauai,NA,NA,Tracks,-159.6645,22.121997,no
+C-2651,Tracks only,Kauai,NA,NA,Tracks,-159.664528,22.121972,no
+C-2668,Tracks only,Big Island,NA,NA,Tracks,-155.228625,19.393117,no
+C-2670,Tracks only,Big Island,NA,NA,Tracks,-155.949547,19.719219,no
+C-2671,Tracks only,Big Island,NA,NA,Tracks,-155.219231,19.378903,no
+C-2676,Tracks only,Big Island,NA,NA,Tracks,-155.231403,19.397111,no
+C-2679,Tracks only,Big Island,NA,NA,Tracks,-155.223092,19.384692,no
+C-2681,Tracks only,Big Island,NA,NA,Tracks,-155.2169,19.374839,no
+C-2682,Tracks only,Big Island,NA,NA,Tracks,-155.218342,19.377203,no
+C-2685,Tracks only,Big Island,NA,NA,Tracks,-155.216967,19.374511,no
+C-2686,Tracks only,Big Island,NA,NA,Tracks,-155.217894,19.376281,no
+C-2690,Tracks only,Big Island,NA,NA,Tracks,-155.223075,19.384625,no
+C-2695,Tracks only,Big Island,NA,NA,Tracks,-155.229917,19.395722,no
+C-2697,Tracks only,Big Island,NA,NA,Tracks,-155.219214,19.367033,no
+C-2700,Tracks only,Big Island,NA,NA,Tracks,-155.140939,19.902211,no
+C-2702,Tracks only,Kauai,NA,NA,Tracks,-159.660261,22.131531,no
+C-2718,Tracks only,Kauai,NA,NA,Tracks,-159.651342,22.124844,no
+C-2722,Tracks only,Kauai,NA,NA,Tracks,-159.651433,22.124808,no
+C-2724,Tracks only,Big Island,NA,NA,Tracks,-155.948889,19.718825,no
+C-2731,Tracks only,Big Island,NA,NA,Tracks,-155.238239,19.412214,no
+C-2734,Tracks only,Kauai,NA,NA,Tracks,-159.656144,22.1238,no
+C-2747,Tracks only,Big Island,NA,NA,Tracks,-155.949464,19.719153,no
+C-2765,Tracks only,Big Island,NA,NA,Tracks,-155.139911,19.904864,no
+C-2768,Tracks only,Big Island,NA,NA,Tracks,-155.441481,20.036428,no
+C-2773,Tracks only,Big Island,NA,NA,Tracks,-155.441681,20.036883,no
+C-2774,Tracks only,Big Island,NA,NA,Tracks,-155.441625,20.036797,no
+C-2781,Tracks only,Big Island,NA,NA,Tracks,-155.441728,20.036889,no
+C-2784,Tracks only,Big Island,NA,NA,Tracks,-155.441828,20.03685,no
+C-2785,Tracks only,Big Island,NA,NA,Tracks,-155.239192,19.426067,no
+C-2789,Tracks only,Big Island,NA,NA,Tracks,-155.615408,19.076544,no
+C-2796,Tracks only,Big Island,NA,NA,Tracks,-155.215856,19.428175,no
+C-2797,Tracks only,Big Island,NA,NA,Tracks,-155.253442,19.400497,no
+C-2799,Tracks only,Big Island,NA,NA,Tracks,-155.236794,19.375836,no
+C-2801,Tracks only,Big Island,NA,NA,Tracks,-155.225361,19.371661,no
+C-2802,Tracks only,Big Island,NA,NA,Tracks,-155.233961,19.373386,no
+C-2813,Tracks only,Big Island,NA,NA,Tracks,-155.22245,19.423789,no
+C-2817,Tracks only,Big Island,NA,NA,Tracks,-155.222383,19.4239,no
+C-2825,Tracks only,Big Island,NA,NA,Tracks,-155.152275,19.854167,no
+C-2852,Tracks only,Big Island,NA,NA,Tracks,-155.439908,20.03535,no
+C-2853,Tracks only,Big Island,NA,NA,Tracks,-155.067906,19.590756,no
+C-2855,Tracks only,Big Island,NA,NA,Tracks,-155.238369,19.413422,no
+C-2858,Tracks only,Big Island,NA,NA,Tracks,-155.439603,20.035417,no
+C-2868,Tracks only,Big Island,NA,NA,Tracks,-155.222447,19.423889,no
+C-2872,Tracks only,Big Island,NA,NA,Tracks,-155.222494,19.424061,no
+C-2876,Tracks only,Big Island,NA,NA,Tracks,-155.222481,19.424106,no
+C-2881,Tracks only,Big Island,NA,NA,Tracks,-155.135425,19.904461,no
+C-2882,Tracks only,Big Island,NA,NA,Tracks,-155.136294,19.905875,no
+C-2884,Tracks only,Big Island,NA,NA,Tracks,-155.134347,19.904056,no
+C-2886,Tracks only,Big Island,NA,NA,Tracks,-155.135875,19.905083,no
+C-2891,Tracks only,Big Island,NA,NA,Tracks,-155.215906,19.428089,no
+C-2896,Tracks only,Big Island,NA,NA,Tracks,-155.4397553,20.03992018,no
+C-2900,Tracks only,Big Island,NA,NA,Tracks,-155.443814,20.040636,no
+C-2908,Tracks only,Big Island,NA,NA,Tracks,-155.14235300000001,19.90085,no
+C-2913,Tracks only,Big Island,NA,NA,Tracks,-155.439531,20.037736,no
+C-2914,Tracks only,Big Island,NA,NA,Tracks,-155.444806,20.040872,no
+C-2920,Tracks only,Big Island,NA,NA,Tracks,-155.823164,19.111889,no
+C-2931,Tracks only,Big Island,NA,NA,Tracks,-155.477011,19.2024,no
+C-2932,Tracks only,Big Island,NA,NA,Tracks,-155.483042,19.199917,no
+C-2941,Tracks only,Big Island,NA,NA,Tracks,-155.235697,19.407644,no
+C-2943,Tracks only,Big Island,NA,NA,Tracks,-155.303328,19.438633,no
+C-2947,Tracks only,Big Island,NA,NA,Tracks,-155.232583,19.400919,no
+C-2948,Tracks only,Big Island,NA,NA,Tracks,-155.232447,19.400278,no
+C-2950,Tracks only,Big Island,NA,NA,Tracks,-155.233097,19.401789,no
+C-2952,Tracks only,Big Island,NA,NA,Tracks,-155.234903,19.405075,no
+C-2953,Tracks only,Big Island,NA,NA,Tracks,-155.303375,19.438775,no
+C-2957,Tracks only,Big Island,NA,NA,Tracks,-155.237086,19.410522,no
+C-2959,Tracks only,Big Island,NA,NA,Tracks,-155.473442,20.047111,no
+C-2960,Tracks only,Big Island,NA,NA,Tracks,-155.499228,20.049894,no
+C-2961,Tracks only,Big Island,NA,NA,Tracks,-155.222486,19.423858,no
+C-2963,Tracks only,Big Island,NA,NA,Tracks,-155.491111,20.050194,no
+C-2964,Tracks only,Big Island,NA,NA,Tracks,-155.499158,20.049917,no
+C-2966,Tracks only,Big Island,NA,NA,Tracks,-155.222497,19.423908,no
+C-2967,Tracks only,Big Island,NA,NA,Tracks,-155.222456,19.4239,no
+C-2979,Tracks only,Big Island,NA,NA,Tracks,-155.180931,19.4394,no
+C-2998,Tracks only,Big Island,NA,NA,Tracks,-155.23705,19.452197,no
+C-3003,Tracks only,Big Island,NA,NA,Tracks,-155.262894,19.432325,no
+C-3006,Tracks only,Big Island,NA,NA,Tracks,-155.265531,19.430161,no
+C-3008,Tracks only,Big Island,NA,NA,Tracks,-155.264608,19.430097,no
+C-3009,Tracks only,Big Island,NA,NA,Tracks,-155.263783,19.430011,no
+C-3012,Tracks only,Big Island,NA,NA,Tracks,-155.259397,19.42985,no
+C-3013,Tracks only,Big Island,NA,NA,Tracks,-155.303142,19.438531,no
+C-3014,Tracks only,Big Island,NA,NA,Tracks,-155.26285,19.429875,no
+C-3015,Tracks only,Big Island,NA,NA,Tracks,-155.258872,19.429622,no
+C-3017,Tracks only,Big Island,NA,NA,Tracks,-155.304819,19.440447,no
+C-3023,Tracks only,Big Island,NA,NA,Tracks,-155.301939,19.442925,no
+C-3025,Tracks only,Big Island,NA,NA,Tracks,-155.262067,19.429597,no
+C-3032,Tracks only,Big Island,NA,NA,Tracks,-155.069056,19.590467,no
+C-3033,Tracks only,Big Island,NA,NA,Tracks,-155.259344,19.430672,no
+C-3035,Tracks only,Big Island,NA,NA,Tracks,-155.224797,19.355289,no
+C-3037,Tracks only,Big Island,NA,NA,Tracks,-155.22485,19.354839,no
+C-3040,Tracks only,Big Island,NA,NA,Tracks,-155.259625,19.430828,no
+C-3041,Tracks only,Big Island,NA,NA,Tracks,-155.222342,19.424381,no
+C-3044,Tracks only,Big Island,NA,NA,Tracks,-155.222089,19.424519,no
+C-3050,Tracks only,Big Island,NA,NA,Tracks,-155.222053,19.424533,no
+C-3051,Tracks only,Big Island,NA,NA,Tracks,-155.222131,19.423986,no
+C-3052,Tracks only,Big Island,NA,NA,Tracks,-155.222189,19.424033,no
+C-3054,Tracks only,Big Island,NA,NA,Tracks,-155.222364,19.423831,no
+C-3056,Tracks only,Big Island,NA,NA,Tracks,-155.224617,19.356067,no
+C-3057,Tracks only,Big Island,NA,NA,Tracks,-155.068378,19.590575,no
+C-3059,Tracks only,Big Island,NA,NA,Tracks,-155.222475,19.423833,no
+C-3060,Tracks only,Big Island,NA,NA,Tracks,-155.222633,19.423947,no
+C-3066,Tracks only,Big Island,NA,NA,Tracks,-155.578681,20.041714,no
+C-3067,Tracks only,Big Island,NA,NA,Tracks,-155.441869,20.039817,no
+C-3069,Tracks only,Big Island,NA,NA,Tracks,-155.068592,19.725608,no
+C-3080,Tracks only,Big Island,NA,NA,Tracks,-155.236931,19.452128,no
+C-3087,Tracks only,Big Island,NA,NA,Tracks,-155.438289,20.039922,no
+C-3091,Tracks only,Big Island,NA,NA,Tracks,-155.438314,20.039108,no
+C-3101,Tracks only,Big Island,NA,NA,Tracks,-155.222458,19.423869,no
+C-3105,Tracks only,Big Island,NA,NA,Tracks,-155.222481,19.423853,no
+C-3109,Tracks only,Big Island,NA,NA,Tracks,-155.520606,20.053303,no
+C-3111,Tracks only,Big Island,NA,NA,Tracks,-155.438556,20.039914,no
+C-3113,Tracks only,Big Island,NA,NA,Tracks,-155.513081,20.049936,no
+C-3116,Tracks only,Big Island,NA,NA,Tracks,-155.615733,19.076644,no
+C-3117,Tracks only,Big Island,NA,NA,Tracks,-155.506242,20.050242,no
+C-3123,Tracks only,Big Island,NA,NA,Tracks,-155.441056,20.037814,no
+C-3124,Tracks only,Big Island,NA,NA,Tracks,-155.441792,20.036869,no
+C-3126,Tracks only,Big Island,NA,NA,Tracks,-155.818903,19.115214,no
+C-3127,Tracks only,Big Island,NA,NA,Tracks,-155.443525,20.032403,no
+C-3139,Tracks only,Big Island,NA,NA,Tracks,-155.441503,20.039906,no
+C-3140,Tracks only,Big Island,NA,NA,Tracks,-155.134794,19.905064,no
+C-3141,Tracks only,Big Island,NA,NA,Tracks,-155.441517,20.037208,no
+C-3145,Tracks only,Big Island,NA,NA,Tracks,-155.438519,20.038772,no
+C-3161,Tracks only,Big Island,NA,NA,Tracks,-155.948608,19.719447,no
+C-3166,Tracks only,Big Island,NA,NA,Tracks,-155.823725,19.111136,no
+C-3168,Tracks only,Big Island,NA,NA,Tracks,-155.441511,20.039856,no
+C-3170,Tracks only,Big Island,NA,NA,Tracks,-155.4379,20.038883,no
+C-3172,Tracks only,Big Island,NA,NA,Tracks,-155.134761,19.904239,no
+C-3175,Tracks only,Big Island,NA,NA,Tracks,-155.441167,20.037453,no
+C-3184,Tracks only,Big Island,NA,NA,Tracks,-155.239767,19.425681,no
+C-3185,Tracks only,Big Island,NA,NA,Tracks,-155.443494,20.032353,no
+C-3187,Tracks only,Big Island,NA,NA,Tracks,-155.624194,19.080883,no
+C-3196,Tracks only,Big Island,NA,NA,Tracks,-155.194689,19.443014,no
+C-3199,Tracks only,Big Island,NA,NA,Tracks,-155.183528,19.44375,no
+C-3202,Tracks only,Big Island,NA,NA,Tracks,-155.948806,19.718303,no
+C-3206,Tracks only,Big Island,NA,NA,Tracks,-155.620339,19.092408,no
+C-3207,Tracks only,Big Island,NA,NA,Tracks,-155.239672,19.425922,no
+C-3215,Tracks only,Big Island,NA,NA,Tracks,-155.239642,19.425936,no
+C-3216,Tracks only,Big Island,NA,NA,Tracks,-155.441103,20.035983,no
+C-3219,Tracks only,Big Island,NA,NA,Tracks,-155.2394,19.426167,no
+C-3227,Tracks only,Big Island,NA,NA,Tracks,-155.239747,19.425733,no
+C-3232,Tracks only,Big Island,NA,NA,Tracks,-155.239103,19.426333,no
+C-3238,Tracks only,Big Island,NA,NA,Tracks,-155.621433,19.078836,no
+C-3239,Tracks only,Big Island,NA,NA,Tracks,-155.239736,19.425839,no
+C-3240,Tracks only,Big Island,NA,NA,Tracks,-155.192975,19.440036,no
+C-3245,Tracks only,Big Island,NA,NA,Tracks,-155.82475,19.117631,no
+C-3253,Tracks only,Big Island,NA,NA,Tracks,-155.819711,19.117583,no
+C-3255,Tracks only,Big Island,NA,NA,Tracks,-155.824825,19.117742,no
+C-3259,Tracks only,Big Island,NA,NA,Tracks,-155.948519,19.719211,no
+C-3261,Tracks only,Big Island,NA,NA,Tracks,-155.821853,19.119458,no
+C-3268,Tracks only,Big Island,NA,NA,Tracks,-155.618558,19.089864,no
+C-3269,Tracks only,Big Island,NA,NA,Tracks,-155.818461,19.115431,no
+C-3271,Tracks only,Big Island,NA,NA,Tracks,-155.948725,19.720228,no
+C-3275,Tracks only,Big Island,NA,NA,Tracks,-155.825208,19.117225,no
+C-3276,Tracks only,Big Island,NA,NA,Tracks,-155.526464,19.748753,no
+C-3278,Tracks only,Big Island,NA,NA,Tracks,-155.819044,19.115258,no
+C-3291,Tracks only,Big Island,NA,NA,Tracks,-155.819439,19.115244,no
+C-3296,Tracks only,Big Island,NA,NA,Tracks,-155.389261,19.345478,no
+C-3297,Tracks only,Big Island,NA,NA,Tracks,-155.819872,19.114969,no
+C-3298,Tracks only,Big Island,NA,NA,Tracks,-155.822006,19.119394,no
+C-3302,Tracks only,Big Island,NA,NA,Tracks,-155.069058,19.726106,no
+C-3303,Tracks only,Big Island,NA,NA,Tracks,-155.069494,19.725292,no
+C-3314,Tracks only,Big Island,NA,NA,Tracks,-154.901197,19.483125,no
+C-3316,Tracks only,Big Island,NA,NA,Tracks,-155.441756,20.036897,no
+C-3321,Tracks only,Big Island,NA,NA,Tracks,-154.902808,19.483389,no
+C-3323,Tracks only,Big Island,NA,NA,Tracks,-155.443042,20.0337,no
+C-3327,Tracks only,Big Island,NA,NA,Tracks,-155.443053,20.034031,no
+C-3328,Tracks only,Big Island,NA,NA,Tracks,-155.44125,20.037503,no
+C-3329,Tracks only,Big Island,NA,NA,Tracks,-155.068147,19.726039,no
+C-3331,Tracks only,Big Island,NA,NA,Tracks,-155.442911,20.034836,no
+C-3332,Tracks only,Big Island,NA,NA,Tracks,-155.441431,20.037308,no
+C-3336,Tracks only,Big Island,NA,NA,Tracks,-155.441778,20.036628,no
+C-3341,Tracks only,Big Island,NA,NA,Tracks,-154.902847,19.482961,no
+C-3345,Tracks only,Big Island,NA,NA,Tracks,-154.902528,19.483144,no
+C-3346,Tracks only,Big Island,NA,NA,Tracks,-154.904214,19.482925,no
+C-3351,Tracks only,Big Island,NA,NA,Tracks,-155.442083,20.036456,no
+C-3355,Tracks only,Big Island,NA,NA,Tracks,-155.441744,20.036864,no
+C-3359,Tracks only,Big Island,NA,NA,Tracks,-155.44175,20.036861,no
+C-3369,Tracks only,Big Island,NA,NA,Tracks,-154.903356,19.483244,no
+C-3373,Tracks only,Big Island,NA,NA,Tracks,-154.903017,19.483386,no
+C-3377,Tracks only,Big Island,NA,NA,Tracks,-154.902847,19.483406,no
+C-3384,Tracks only,Big Island,NA,NA,Tracks,-155.619686,19.092197,no
+C-3389,Tracks only,Big Island,NA,NA,Tracks,-154.902725,19.483572,no
+C-3393,Tracks only,Big Island,NA,NA,Tracks,-154.901461,19.483572,no
+C-3396,Tracks only,Big Island,NA,NA,Tracks,-155.619719,19.094339,no
+C-3407,Tracks only,Big Island,NA,NA,Tracks,-155.239919,19.425508,no
+C-3408,Tracks only,Big Island,NA,NA,Tracks,-155.233567,19.430089,no
+C-3409,Tracks only,Big Island,NA,NA,Tracks,-154.902547,19.483386,no
+C-3411,Tracks only,Big Island,NA,NA,Tracks,-155.239869,19.425756,no
+C-3416,Tracks only,Big Island,NA,NA,Tracks,-155.240017,19.425533,no
+C-3420,Tracks only,Big Island,NA,NA,Tracks,-155.239767,19.425556,no
+C-3425,Tracks only,Big Island,NA,NA,Tracks,-155.239361,19.426028,no
+C-3429,Tracks only,Big Island,NA,NA,Tracks,-155.239181,19.426292,no
+C-3437,Tracks only,Big Island,NA,NA,Tracks,-155.239558,19.426181,no
+C-3441,Tracks only,Big Island,NA,NA,Tracks,-155.239789,19.425775,no
+C-3486,Tracks only,Big Island,NA,NA,Tracks,-155.162911,19.932525,no
+C-3509,Tracks only,Big Island,NA,NA,Tracks,-155.101483,19.850811,no
+C-3514,Tracks only,Big Island,NA,NA,Tracks,-155.220867,19.952739,no
+C-3517,Tracks only,Big Island,NA,NA,Tracks,-155.141383,19.906744,no
+C-3518,Tracks only,Big Island,NA,NA,Tracks,-155.223633,19.950136,no
 C-0016,Not genotyped,Oahu,NA,NA,Yes,-157.722458,21.314133000000002,no
 C-0022,Not genotyped,Oahu,NA,NA,Yes,-157.722117,21.313558,no
-C-0027,Not genotyped,Oahu,NA,NA,Tracks,-157.801125,21.333292,no
 C-0034,Not genotyped,Oahu,NA,NA,Yes,-157.806203,21.386039,no
-C-0036,Not genotyped,Oahu,NA,NA,Tracks,-157.803325,21.381903,no
 C-0040,Not genotyped,Oahu,NA,NA,Yes,-157.799769,21.380525,no
 C-0041,Not genotyped,Oahu,NA,NA,Yes,-157.723156,21.306561,no
 C-0043,Not genotyped,Oahu,NA,NA,Yes,-157.857283,21.315943999999998,no
@@ -725,121 +1152,62 @@ C-0045,Not genotyped,Oahu,NA,NA,Yes,-157.855097,21.320142,no
 C-0046,Not genotyped,Oahu,NA,NA,Yes,-157.724197,21.306325,no
 C-0048,Not genotyped,Oahu,NA,NA,Yes,-157.799853,21.379644,no
 C-0050,Not genotyped,Oahu,NA,NA,Yes,-157.799903,21.379406,no
-C-0056,Not genotyped,Oahu,NA,NA,Tracks,-157.721964,21.308586,no
-C-0059,Not genotyped,Oahu,NA,NA,Tracks,-157.799636,21.336539,no
-C-0070,Not genotyped,Oahu,NA,NA,Tracks,-157.779636,21.362181,no
-C-0071,Not genotyped,Oahu,NA,NA,Tracks,-157.806342,21.351047,no
 C-0073,Not genotyped,Oahu,NA,NA,Yes,-157.805953,21.351833,no
-C-0075,Not genotyped,Oahu,NA,NA,Tracks,-157.779928,21.364875,no
-C-0088,Not genotyped,Oahu,NA,NA,Tracks,-158.017142,21.503544,no
 C-0089,Not genotyped,Oahu,NA,NA,Yes,-157.800017,21.335367,no
 C-0092,Not genotyped,Oahu,NA,NA,Yes,-157.800733,21.334156,no
 C-0095,Not genotyped,Oahu,NA,NA,Yes,-157.857878,21.3167,no
 C-0106,Not genotyped,Oahu,NA,NA,Yes,-157.805522,21.387036,no
 C-0107,Not genotyped,Kauai,NA,NA,Yes,-159.594322,22.191986,no
 C-0110,Not genotyped,Kauai,NA,NA,Yes,-159.594856,22.198258,no
-C-0112,Not genotyped,Kauai,NA,NA,Tracks,-159.596392,22.203839,no
-C-0114,Not genotyped,Kauai,NA,NA,Tracks,-159.597381,22.206706,no
-C-0122,Not genotyped,Kauai,NA,NA,Tracks,-159.587122,22.217614,no
-C-0124,Not genotyped,Kauai,NA,NA,Tracks,-159.621222,22.151731,no
-C-0129,Not genotyped,Kauai,NA,NA,Tracks,-159.621469,22.151492,no
 C-0139,Not genotyped,Kauai,NA,NA,Yes,-159.617275,22.147472,no
-C-0143,Not genotyped,Kauai,NA,NA,Tracks,-159.604683,22.148044,no
 C-0145,Not genotyped,Kauai,NA,NA,Yes,-159.617131,22.153006,no
-C-0149,Not genotyped,Kauai,NA,NA,Tracks,-159.628208,22.148258,no
 C-0151,Not genotyped,Kauai,NA,NA,Yes,-159.617225,22.153236,no
-C-0152,Not genotyped,Kauai,NA,NA,Tracks,-159.617267,22.147536,no
-C-0154,Not genotyped,Kauai,NA,NA,Tracks,-159.660394,22.131372,no
-C-0162,Not genotyped,Kauai,NA,NA,Tracks,-159.649164,22.141331,no
-C-0164,Not genotyped,Kauai,NA,NA,Tracks,-159.597819,22.156056,no
-C-0165,Not genotyped,Kauai,NA,NA,Tracks,-159.604289,22.148608,no
-C-0170,Not genotyped,Kauai,NA,NA,Tracks,-159.611217,22.146197,no
 C-0172,Not genotyped,Kauai,NA,NA,Yes,-159.613294,22.146892,no
 C-0178,Not genotyped,Kauai,NA,NA,Yes,-159.323025,22.076153,no
 C-0180,Not genotyped,Kauai,NA,NA,Yes,-159.595022,22.200453,no
-C-0181,Not genotyped,Kauai,NA,NA,Tracks,-159.300636,22.117747,no
 C-0182,Not genotyped,Kauai,NA,NA,Yes,-159.597203,22.207692,no
 C-0185,Not genotyped,Kauai,NA,NA,Yes,-159.585581,22.217458,no
-C-0191,Not genotyped,Kauai,NA,NA,Tracks,-159.402975,22.201536,no
 C-0198,Not genotyped,Kauai,NA,NA,Yes,-159.597147,22.207494,no
-C-0199,Not genotyped,Kauai,NA,NA,Tracks,-159.589703,22.214272,no
-C-0207,Not genotyped,Kauai,NA,NA,Tracks,-159.597194,22.207375,no
 C-0216,Not genotyped,Kauai,NA,NA,Yes,-159.617156,22.15325,no
 C-0217,Not genotyped,Kauai,NA,NA,Yes,-159.594633,22.199528,no
 C-0218,Not genotyped,Kauai,NA,NA,Yes,-159.595008,22.200481,no
-C-0229,Not genotyped,Kauai,NA,NA,Tracks,-159.6421812,22.1499193,no
 C-0230,Not genotyped,Kauai,NA,NA,Yes,-159.6423375,22.15028957,no
 C-0233,Not genotyped,Kauai,NA,NA,Yes,-159.641075,22.136639,no
-C-0235,Not genotyped,Kauai,NA,NA,Tracks,-159.640969,22.133458,no
 C-0236,Not genotyped,Kauai,NA,NA,Yes,-159.641314,22.134103,no
 C-0238,Not genotyped,Kauai,NA,NA,Yes,-159.674439,22.094539,no
 C-0240,Not genotyped,Kauai,NA,NA,Yes,-159.5737687,22.12600815,no
 C-0247,Not genotyped,Kauai,NA,NA,Yes,-159.647394,22.144611,no
 C-0251,Not genotyped,Kauai,NA,NA,Yes,-159.42095,22.074733,no
-C-0259,Not genotyped,Kauai,NA,NA,Tracks,-159.423044,22.078728,no
 C-0261,Not genotyped,Kauai,NA,NA,Yes,-159.426017,22.081542,no
-C-0268,Not genotyped,Kauai,NA,NA,Tracks,-159.375603,22.100686,no
-C-0269,Not genotyped,Kauai,NA,NA,Tracks,-159.386672,22.102539,no
 C-0270,Not genotyped,Kauai,NA,NA,Yes,-159.387061,22.102608,no
 C-0273,Not genotyped,Kauai,NA,NA,Yes,-159.350322,22.082389,no
-C-0274,Not genotyped,Kauai,NA,NA,Tracks,-159.387669,22.103158,no
 C-0291,Not genotyped,Kauai,NA,NA,Yes,-159.425928,22.081581,no
 C-0295,Not genotyped,Kauai,NA,NA,Yes,-159.425992,22.081661,no
-C-0296,Not genotyped,Kauai,NA,NA,Tracks,-159.426014,22.081606,no
 C-0301,Not genotyped,Kauai,NA,NA,Yes,-159.472681,22.201183,no
 C-0304,Not genotyped,Maui,NA,NA,Yes,-156.535525,20.948894,no
-C-0307,Not genotyped,Maui,NA,NA,Tracks,-156.535021,20.950026,no
 C-0309,Not genotyped,Kauai,NA,NA,Yes,-159.4728,22.201656,no
 C-0320,Not genotyped,Maui,NA,NA,Yes,-156.536608,20.949722,no
 C-0324,Not genotyped,Maui,NA,NA,Yes,-156.335369,20.672186,no
-C-0327,Not genotyped,Maui,NA,NA,Tracks,-156.535331,20.949403,no
 C-0332,Not genotyped,Maui,NA,NA,Yes,-156.336258,20.671633,no
-C-0336,Not genotyped,Maui,NA,NA,Tracks,-156.335833,20.670575,no
-C-0342,Not genotyped,Maui,NA,NA,Tracks,-156.532844,20.952117,no
-C-0347,Not genotyped,Maui,NA,NA,Tracks,-156.536511,20.948803,no
 C-0351,Not genotyped,Maui,NA,NA,Yes,-156.536525,20.948725,no
 C-0352,Not genotyped,Maui,NA,NA,Yes,-156.330458,20.679658,no
 C-0361,Not genotyped,Maui,NA,NA,Yes,-156.339942,20.673981,no
-C-0381,Not genotyped,Maui,NA,NA,Tracks,-156.332556,20.6759,no
-C-0384,Not genotyped,Maui,NA,NA,Tracks,-156.097159,20.80732,no
-C-0385,Not genotyped,Maui,NA,NA,Tracks,-156.333278,20.674186,no
-C-0388,Not genotyped,Maui,NA,NA,Tracks,-156.097072,20.807294,no
-C-0389,Not genotyped,Maui,NA,NA,Tracks,-156.332317,20.672508,no
-C-0393,Not genotyped,Maui,NA,NA,Tracks,-156.333072,20.674875,no
 C-0397,Not genotyped,Maui,NA,NA,Yes,-156.332864,20.675433,no
 C-0400,Not genotyped,Maui,NA,NA,Yes,-156.096019,20.8075,no
-C-0401,Not genotyped,Maui,NA,NA,Tracks,-156.332306,20.676389,no
-C-0404,Not genotyped,Maui,NA,NA,Tracks,-156.095849,20.807562,no
-C-0407,Not genotyped,Maui,NA,NA,Tracks,-156.003034,20.779735,no
-C-0417,Not genotyped,Maui,NA,NA,Tracks,-156.332561,20.672228,no
 C-0419,Not genotyped,Maui,NA,NA,Yes,-156.046589,20.793231,no
 C-0422,Not genotyped,Kauai,NA,NA,Yes,-159.426061,22.082511,no
 C-0423,Not genotyped,Kauai,NA,NA,Yes,-159.421142,22.075014,no
-C-0425,Not genotyped,Kauai,NA,NA,Tracks,-159.421236,22.075144,no
 C-0432,Not genotyped,Kauai,NA,NA,Yes,-159.427372,22.087633,no
 C-0435,Not genotyped,Kauai,NA,NA,Yes,-159.429611,22.089911,no
 C-0437,Not genotyped,Kauai,NA,NA,Yes,-159.424778,22.079914,no
 C-0439,Not genotyped,Kauai,NA,NA,Yes,-159.426103,22.081256,no
-C-0447,Not genotyped,Kauai,NA,NA,Tracks,-159.415408,22.073392,no
-C-0449,Not genotyped,Kauai,NA,NA,Tracks,-159.414131,22.075181,no
-C-0465,Not genotyped,Kauai,NA,NA,Tracks,-159.656158,22.123408,no
-C-0470,Not genotyped,Kauai,NA,NA,Tracks,-159.655375,22.124456,no
 C-0471,Not genotyped,Kauai,NA,NA,Yes,-159.6237,22.149294,no
-C-0475,Not genotyped,Kauai,NA,NA,Tracks,-159.616936,22.152792,no
 C-0476,Not genotyped,Kauai,NA,NA,Yes,-159.615914,22.148772,no
-C-0485,Not genotyped,Kauai,NA,NA,Tracks,-159.64138,22.149054,no
-C-0486,Not genotyped,Kauai,NA,NA,Tracks,-159.641363,22.149121,no
-C-0487,Not genotyped,Kauai,NA,NA,Tracks,-159.641396,22.149134,no
 C-0488,Not genotyped,Kauai,NA,NA,Yes,-159.641355,22.149134,no
 C-0489,Not genotyped,Kauai,NA,NA,Yes,-159.6413417,22.1491113,no
-C-0490,Not genotyped,Kauai,NA,NA,Tracks,-159.641364,22.149101,no
 C-0491,Not genotyped,Kauai,NA,NA,Yes,-159.641366,22.149098,no
-C-0492,Not genotyped,Kauai,NA,NA,Tracks,-159.641349,22.149104,no
 C-0493,Not genotyped,Kauai,NA,NA,Yes,-159.64133,22.1490685,no
 C-0495,Not genotyped,Kauai,NA,NA,Yes,-159.646283,22.151208,no
-C-0501,Not genotyped,Kauai,NA,NA,Tracks,-159.617265,22.153389,no
-C-0509,Not genotyped,Kauai,NA,NA,Tracks,-159.600203,22.152025,no
-C-0522,Not genotyped,Kauai,NA,NA,Tracks,-159.660422,22.131483,no
 C-0525,Not genotyped,Kauai,NA,NA,Yes,-159.660439,22.131492,no
 C-0526,Not genotyped,Kauai,NA,NA,Yes,-159.660456,22.1315,no
 C-0534,Not genotyped,Kauai,NA,NA,Yes,-159.660083,22.131897,no
@@ -848,105 +1216,47 @@ C-0544,Not genotyped,Kauai,NA,NA,Yes,-159.6444975,22.13606677,no
 C-0549,Not genotyped,Kauai,NA,NA,Yes,-159.4056079,22.05560838,no
 C-0551,Not genotyped,Kauai,NA,NA,Yes,-159.412447,22.083419,no
 C-0561,Not genotyped,Kauai,NA,NA,Yes,-159.377319,21.995411,no
-C-0563,Not genotyped,Molokai,NA,NA,Tracks,-156.965661,21.138192,no
-C-0564,Not genotyped,Maui,NA,NA,Tracks,-156.179811,20.870576,no
 C-0566,Not genotyped,Kauai,NA,NA,Yes,-159.6641103,22.1214994,no
 C-0569,Not genotyped,Kauai,NA,NA,Yes,-159.664492,22.121844,no
-C-0572,Not genotyped,Kauai,NA,NA,Tracks,-159.6228463,22.15004209,no
-C-0580,Not genotyped,Kauai,NA,NA,Tracks,-159.616136,22.151857,no
-C-0589,Not genotyped,Kauai,NA,NA,Tracks,-159.664386,22.121912,no
-C-0592,Not genotyped,Kauai,NA,NA,Tracks,-159.661536,22.134031,no
 C-0596,Not genotyped,Kauai,NA,NA,Yes,-159.662422,22.133847,no
 C-0600,Not genotyped,Kauai,NA,NA,Yes,-159.650711,22.141514,no
 C-0601,Not genotyped,Kauai,NA,NA,Yes,-159.664394,22.121886,no
-C-0606,Not genotyped,Kauai,NA,NA,Tracks,-159.670014,22.086264,no
-C-0610,Not genotyped,Kauai,NA,NA,Tracks,-159.6172,22.153261,no
-C-0614,Not genotyped,Kauai,NA,NA,Tracks,-159.664469,22.121839,no
-C-0618,Not genotyped,Kauai,NA,NA,Tracks,-159.7087518,22.12394834,no
 C-0620,Not genotyped,Molokai,NA,NA,Yes,-156.965933,21.137994,no
-C-0621,Not genotyped,Maui,NA,NA,Tracks,-156.515413,20.88202,no
 C-0626,Not genotyped,Molokai,NA,NA,Yes,-157.005386,21.177153,no
-C-0629,Not genotyped,Molokai,NA,NA,Tracks,-157.008278,21.175608,no
-C-0630,Not genotyped,Molokai,NA,NA,Tracks,-157.008285,21.175636,no
-C-0634,Not genotyped,Molokai,NA,NA,Tracks,-157.008278,21.175678,no
-C-0635,Not genotyped,Molokai,NA,NA,Tracks,-157.008403,21.175631,no
 C-0636,Not genotyped,Molokai,NA,NA,Yes,-157.008278,21.175561,no
-C-0638,Not genotyped,Molokai,NA,NA,Tracks,-157.008275,21.175514,no
-C-0641,Not genotyped,Molokai,NA,NA,Tracks,-157.008225,21.175617,no
-C-0644,Not genotyped,Molokai,NA,NA,Tracks,-157.00505,21.176078,no
-C-0646,Not genotyped,Molokai,NA,NA,Tracks,-156.96595,21.137981,no
 C-0647,Not genotyped,Molokai,NA,NA,Yes,-157.005344,21.176989,no
 C-0648,Not genotyped,Molokai,NA,NA,Yes,-157.005483,21.177225,no
-C-0649,Not genotyped,Kauai,NA,NA,Tracks,-159.645311,22.128939,no
 C-0652,Not genotyped,Kauai,NA,NA,Yes,-159.650444,22.125197,no
-C-0655,Not genotyped,Kauai,NA,NA,Tracks,-159.660481,22.131611,no
 C-0656,Not genotyped,Kauai,NA,NA,Yes,-159.660475,22.131533,no
 C-0657,Not genotyped,Kauai,NA,NA,Yes,-159.660417,22.13155,no
-C-0660,Not genotyped,Kauai,NA,NA,Tracks,-159.660369,22.131403,no
-C-0661,Not genotyped,Kauai,NA,NA,Tracks,-159.652769,22.141961,no
-C-0663,Not genotyped,Kauai,NA,NA,Tracks,-159.653425,22.142539,no
-C-0664,Not genotyped,Kauai,NA,NA,Tracks,-159.654581,22.143375,no
-C-0667,Not genotyped,Kauai,NA,NA,Tracks,-159.649608,22.127789,no
 C-0670,Not genotyped,Kauai,NA,NA,Yes,-159.660244,22.129983,no
-C-0672,Not genotyped,Kauai,NA,NA,Tracks,-159.66035,22.130597,no
 C-0675,Not genotyped,Kauai,NA,NA,Yes,-159.663578,22.134589,no
 C-0683,Not genotyped,Kauai,NA,NA,Yes,-159.65635,22.123311,no
-C-0685,Not genotyped,Kauai,NA,NA,Tracks,-159.654592,22.1244,no
 C-0686,Not genotyped,Kauai,NA,NA,Yes,-159.65171900000001,22.124711,no
-C-0689,Not genotyped,Kauai,NA,NA,Tracks,-159.660439,22.131511,no
-C-0690,Not genotyped,Kauai,NA,NA,Tracks,-159.661711,22.133697,no
-C-0691,Not genotyped,Kauai,NA,NA,Tracks,-159.661194,22.133914,no
-C-0693,Not genotyped,Kauai,NA,NA,Tracks,-159.660094,22.131889,no
 C-0695,Not genotyped,Kauai,NA,NA,Yes,-159.660297,22.131219,no
 C-0699,Not genotyped,Kauai,NA,NA,Yes,-159.41745,22.071358,no
-C-0700,Not genotyped,Kauai,NA,NA,Tracks,-159.417442,22.071342,no
-C-0701,Not genotyped,Kauai,NA,NA,Tracks,-159.417475,22.071322,no
 C-0703,Not genotyped,Kauai,NA,NA,Yes,-159.417489,22.071339,no
 C-0704,Not genotyped,Kauai,NA,NA,Yes,-159.417514,22.07135,no
 C-0705,Not genotyped,Kauai,NA,NA,Yes,-159.417575,22.071314,no
 C-0706,Not genotyped,Kauai,NA,NA,Yes,-159.417494,22.071339,no
-C-0718,Not genotyped,Kauai,NA,NA,Tracks,-159.413875,22.069681,no
 C-0720,Not genotyped,Kauai,NA,NA,Yes,-159.417392,22.071319,no
-C-0723,Not genotyped,Kauai,NA,NA,Tracks,-159.660239,22.131089,no
-C-0724,Not genotyped,Kauai,NA,NA,Tracks,-159.664794,22.039261,no
-C-0728,Not genotyped,Kauai,NA,NA,Tracks,-159.660453,22.131475,no
-C-0732,Not genotyped,Kauai,NA,NA,Tracks,-159.659644,22.129331,no
-C-0734,Not genotyped,Molokai,NA,NA,Tracks,-156.969036,21.138911,no
-C-0735,Not genotyped,Molokai,NA,NA,Tracks,-156.965903,21.138025,no
-C-0740,Not genotyped,Kauai,NA,NA,Tracks,-159.643672,22.136664,no
 C-0742,Not genotyped,Kauai,NA,NA,Yes,-159.6239042,22.15699653,no
-C-0751,Not genotyped,Kauai,NA,NA,Tracks,-159.642153,22.127217,no
-C-0755,Not genotyped,Molokai,NA,NA,Tracks,-157.005463,21.177075,no
-C-0757,Not genotyped,Molokai,NA,NA,Tracks,-157.005458,21.177017,no
 C-0760,Not genotyped,Molokai,NA,NA,Yes,-157.005394,21.177024,no
 C-0765,Not genotyped,Molokai,NA,NA,Yes,-157.0050015,21.1764271,no
-C-0768,Not genotyped,Molokai,NA,NA,Tracks,-157.005388,21.177006,no
 C-0769,Not genotyped,Molokai,NA,NA,Yes,-157.004952,21.176117,no
-C-0773,Not genotyped,Molokai,NA,NA,Tracks,-157.005392,21.175617,no
 C-0774,Not genotyped,Molokai,NA,NA,Yes,-157.005086,21.176817,no
 C-0778,Not genotyped,Molokai,NA,NA,Yes,-157.005272,21.177161,no
 C-0784,Not genotyped,Kauai,NA,NA,Yes,-159.425964,22.081611,no
 C-0785,Not genotyped,Kauai,NA,NA,Yes,-159.4259925,22.08160875,no
 C-0793,Not genotyped,Kauai,NA,NA,Yes,-159.436544,22.093108,no
-C-0795,Not genotyped,Kauai,NA,NA,Tracks,-159.434636,22.092728,no
 C-0798,Not genotyped,Kauai,NA,NA,Yes,-159.431919,22.092206,no
 C-0802,Not genotyped,Kauai,NA,NA,Yes,-159.423239,22.079556,no
-C-0808,Not genotyped,Kauai,NA,NA,Tracks,-159.642197,22.150047,no
 C-0810,Not genotyped,Kauai,NA,NA,Yes,-159.642053,22.149944,no
-C-0811,Not genotyped,Kauai,NA,NA,Tracks,-159.641369,22.149108,no
-C-0814,Not genotyped,Kauai,NA,NA,Tracks,-159.640092,22.147681,no
-C-0819,Not genotyped,Kauai,NA,NA,Tracks,-159.641372,22.149067,no
-C-0826,Not genotyped,Kauai,NA,NA,Tracks,-159.639708,22.147056,no
 C-0832,Not genotyped,Kauai,NA,NA,Yes,-159.649506,22.141094,no
 C-0838,Not genotyped,Kauai,NA,NA,Yes,-159.653472,22.142489,no
-C-0845,Not genotyped,Kauai,NA,NA,Tracks,-159.392014,22.104131,no
 C-0852,Not genotyped,Maui,NA,NA,Yes,-156.335097,20.6723,no
-C-0856,Not genotyped,Maui,NA,NA,Tracks,-156.333333,20.672456,no
-C-0858,Not genotyped,Kauai,NA,NA,Tracks,-159.3889,22.104111,no
-C-0860,Not genotyped,Maui,NA,NA,Tracks,-156.334956,20.672531,no
 C-0861,Not genotyped,Kauai,NA,NA,Yes,-159.477239,22.198547,no
 C-0868,Not genotyped,Maui,NA,NA,Yes,-156.179826,20.870622,no
-C-0869,Not genotyped,Maui,NA,NA,Tracks,-156.5158585,20.881462,no
 C-0877,Not genotyped,Molokai,NA,NA,Yes,-156.962086,21.138683,no
 C-0883,Not genotyped,Kauai,NA,NA,Yes,-159.357272,22.046528,no
 C-0889,Not genotyped,Molokai,NA,NA,Yes,-156.965825,21.138075,no
@@ -961,15 +1271,9 @@ C-0917,Not genotyped,Maui,NA,NA,Yes,-156.021613,20.782702,no
 C-0925,Not genotyped,Kauai,NA,NA,Yes,-159.478569,22.19435,no
 C-0931,Not genotyped,Maui,NA,NA,Yes,-156.18645,20.874611,no
 C-0933,Not genotyped,Kauai,NA,NA,Yes,-159.478628,22.194333,no
-C-0940,Not genotyped,Kauai,NA,NA,Tracks,-159.477658,22.197208,no
-C-0944,Not genotyped,Maui,NA,NA,Tracks,-156.332683,20.6734,no
 C-0946,Not genotyped,Kauai,NA,NA,Yes,-159.388664,22.085494,no
-C-0947,Not genotyped,Maui,NA,NA,Tracks,-156.186233,20.874608,no
 C-0948,Not genotyped,Maui,NA,NA,Yes,-156.332644,20.673317,no
-C-0952,Not genotyped,Maui,NA,NA,Tracks,-156.332628,20.672069,no
-C-0956,Not genotyped,Maui,NA,NA,Tracks,-156.333225,20.673917,no
 C-0959,Not genotyped,Maui,NA,NA,Yes,-156.186153,20.874981,no
-C-0960,Not genotyped,Maui,NA,NA,Tracks,-156.332928,20.673633,no
 C-0971,Not genotyped,Kauai,NA,NA,Yes,-159.663178,22.069317,no
 C-0995,Not genotyped,Kauai,NA,NA,Yes,-159.664358,22.121906,no
 C-0998,Not genotyped,Kauai,NA,NA,Yes,-159.387989,22.085411,no
@@ -979,163 +1283,65 @@ C-1028,Not genotyped,Kauai,NA,NA,Yes,-159.435375,22.092883,no
 C-1030,Not genotyped,Kauai,NA,NA,Yes,-159.434858,22.092628,no
 C-1035,Not genotyped,Kauai,NA,NA,Yes,-159.429758,22.090067,no
 C-1043,Not genotyped,Kauai,NA,NA,Yes,-159.426128,22.081219,no
-C-1049,Not genotyped,Kauai,NA,NA,Tracks,-159.390044,22.103925,no
-C-1062,Not genotyped,Molokai,NA,NA,Tracks,-156.96571,21.138285,no
 C-1065,Not genotyped,Kauai,NA,NA,Yes,-159.417467,22.071328,no
 C-1070,Not genotyped,Kauai,NA,NA,Yes,-159.417539,22.071475,no
-C-1071,Not genotyped,Kauai,NA,NA,Tracks,-159.417439,22.071211,no
-C-1078,Not genotyped,Kauai,NA,NA,Tracks,-159.41538145000342,22.07341009000214,no
 C-1094,Not genotyped,Maui,NA,NA,Yes,-156.33315,20.674575,no
-C-1095,Not genotyped,Maui,NA,NA,Tracks,-156.332514,20.676283,no
-C-1096,Not genotyped,Maui,NA,NA,Tracks,-156.332711,20.675267,no
-C-1098,Not genotyped,Maui,NA,NA,Tracks,-156.332614,20.67575,no
-C-1100,Not genotyped,Maui,NA,NA,Tracks,-156.331528,20.676867,no
-C-1104,Not genotyped,Maui,NA,NA,Tracks,-156.331294,20.676867,no
-C-1118,Not genotyped,Maui,NA,NA,Tracks,-156.536167,20.949358,no
-C-1119,Not genotyped,Maui,NA,NA,Tracks,-156.535508,20.949847,no
-C-1120,Not genotyped,Maui,NA,NA,Tracks,-156.535217,20.949489,no
-C-1122,Not genotyped,Maui,NA,NA,Tracks,-156.536928,20.949744,no
-C-1124,Not genotyped,Maui,NA,NA,Tracks,-156.5362,20.949294,no
-C-1128,Not genotyped,Maui,NA,NA,Tracks,-156.535369,20.949372,no
-C-1131,Not genotyped,Maui,NA,NA,Tracks,-156.535381,20.949378,no
 C-1132,Not genotyped,Maui,NA,NA,Yes,-156.511681,20.925994,no
-C-1133,Not genotyped,Maui,NA,NA,Tracks,-156.535339,20.949406,no
 C-1135,Not genotyped,Maui,NA,NA,Yes,-156.536079,20.948536,no
 C-1136,Not genotyped,Maui,NA,NA,Yes,-156.53532,20.949419,no
-C-1137,Not genotyped,Maui,NA,NA,Tracks,-156.535319,20.949419,no
-C-1138,Not genotyped,Maui,NA,NA,Tracks,-156.535317,20.949419,no
 C-1139,Not genotyped,Maui,NA,NA,Yes,-156.545172,20.881073,no
-C-1145,Not genotyped,Maui,NA,NA,Tracks,-156.536511,20.949757,no
 C-1150,Not genotyped,Maui,NA,NA,Yes,-156.339833,20.670556,no
 C-1153,Not genotyped,Maui,NA,NA,Yes,-156.536566,20.949786,no
-C-1157,Not genotyped,Maui,NA,NA,Tracks,-156.536335,20.949722,no
-C-1158,Not genotyped,Maui,NA,NA,Tracks,-156.340122,20.673144,no
 C-1161,Not genotyped,Maui,NA,NA,Yes,-156.536336,20.949052,no
-C-1164,Not genotyped,Maui,NA,NA,Tracks,-156.330817,20.684014,no
-C-1165,Not genotyped,Maui,NA,NA,Tracks,-156.536349,20.948754,no
-C-1166,Not genotyped,Maui,NA,NA,Tracks,-156.338853,20.668914,no
 C-1167,Not genotyped,Kauai,NA,NA,Yes,-159.656172,22.123639,no
-C-1168,Not genotyped,Maui,NA,NA,Tracks,-156.329022,20.684544,no
-C-1169,Not genotyped,Maui,NA,NA,Tracks,-156.337261,20.669481,no
 C-1172,Not genotyped,Maui,NA,NA,Yes,-156.336792,20.682039,no
 C-1173,Not genotyped,Maui,NA,NA,Yes,-156.337803,20.669308,no
-C-1176,Not genotyped,Maui,NA,NA,Tracks,-156.329158,20.68225,no
 C-1180,Not genotyped,Maui,NA,NA,Yes,-156.329244,20.681897,no
-C-1184,Not genotyped,Maui,NA,NA,Tracks,-156.335286,20.682447,no
 C-1186,Not genotyped,Kauai,NA,NA,Yes,-159.657036,22.122611,no
-C-1187,Not genotyped,Kauai,NA,NA,Tracks,-159.657136,22.122594,no
-C-1188,Not genotyped,Maui,NA,NA,Tracks,-156.337161,20.68125,no
-C-1189,Not genotyped,Maui,NA,NA,Tracks,-156.338747,20.669169,no
 C-1195,Not genotyped,Kauai,NA,NA,Yes,-159.654336,22.124353,no
-C-1196,Not genotyped,Maui,NA,NA,Tracks,-156.237008,20.767694,no
-C-1200,Not genotyped,Maui,NA,NA,Tracks,-156.237116,20.767879,no
-C-1205,Not genotyped,Maui,NA,NA,Tracks,-156.134572,20.830723,no
-C-1215,Not genotyped,Maui,NA,NA,Tracks,-156.535322,20.949424,no
 C-1217,Not genotyped,Maui,NA,NA,Yes,-156.0650423,20.78352803,no
-C-1219,Not genotyped,Maui,NA,NA,Tracks,-156.53532,20.949423,no
-C-1223,Not genotyped,Maui,NA,NA,Tracks,-156.516971,20.881184,no
-C-1231,Not genotyped,Maui,NA,NA,Tracks,-156.5156413,20.8819028,no
 C-1235,Not genotyped,Maui,NA,NA,Yes,-156.517755,20.880652,no
 C-1238,Not genotyped,Maui,NA,NA,Yes,-156.1726858,20.8704763,no
-C-1246,Not genotyped,Maui,NA,NA,Tracks,-156.520483,20.878814,no
 C-1251,Not genotyped,Maui,NA,NA,Yes,-156.535697,20.948885,no
 C-1253,Not genotyped,Maui,NA,NA,Yes,-156.0650423,20.78352803,no
-C-1258,Not genotyped,Maui,NA,NA,Tracks,-156.522983,20.878361,no
 C-1263,Not genotyped,Maui,NA,NA,Yes,-155.986918,20.749597,no
-C-1265,Not genotyped,Maui,NA,NA,Tracks,-156.304353,20.723317,no
 C-1266,Not genotyped,Maui,NA,NA,Yes,-156.304344,20.723386,no
 C-1267,Not genotyped,Maui,NA,NA,Yes,-156.304353,20.723413999999998,no
-C-1268,Not genotyped,Maui,NA,NA,Tracks,-156.304325,20.723381,no
-C-1269,Not genotyped,Maui,NA,NA,Tracks,-156.304372,20.723408,no
-C-1270,Not genotyped,Maui,NA,NA,Tracks,-156.304383,20.723392,no
-C-1271,Not genotyped,Maui,NA,NA,Tracks,-156.304356,20.723411,no
-C-1273,Not genotyped,Maui,NA,NA,Tracks,-156.304392,20.723419,no
 C-1274,Not genotyped,Maui,NA,NA,Yes,-156.304278,20.723336,no
 C-1275,Not genotyped,Maui,NA,NA,Yes,-156.304339,20.723328,no
-C-1277,Not genotyped,Maui,NA,NA,Tracks,-156.304436,20.723417,no
-C-1278,Not genotyped,Maui,NA,NA,Tracks,-156.304397,20.723456,no
 C-1280,Not genotyped,Maui,NA,NA,Yes,-156.304339,20.723381,no
-C-1281,Not genotyped,Maui,NA,NA,Tracks,-156.304333,20.723415,no
-C-1282,Not genotyped,Maui,NA,NA,Tracks,-156.3043329,20.7234152,no
-C-1283,Not genotyped,Maui,NA,NA,Tracks,-156.304034,20.723376,no
-C-1284,Not genotyped,Maui,NA,NA,Tracks,-156.304322,20.723416,no
-C-1285,Not genotyped,Maui,NA,NA,Tracks,-156.304335,20.723397,no
 C-1288,Not genotyped,Kauai,NA,NA,Yes,-159.657503,22.130592,no
-C-1291,Not genotyped,Kauai,NA,NA,Tracks,-159.674731,22.105583,no
-C-1303,Not genotyped,Kauai,NA,NA,Tracks,-159.656392,22.123328,no
 C-1305,Not genotyped,Kauai,NA,NA,Yes,-159.65615,22.123619,no
 C-1307,Not genotyped,Maui,NA,NA,Yes,-156.237113,20.767852,no
-C-1308,Not genotyped,Maui,NA,NA,Tracks,-156.23709699999986,20.767851000000743,no
 C-1311,Not genotyped,Maui,NA,NA,Yes,-156.236942,20.767856,no
-C-1312,Not genotyped,Maui,NA,NA,Tracks,-156.237023,20.767841,no
 C-1314,Not genotyped,Maui,NA,NA,Yes,-156.237011,20.767742,no
-C-1317,Not genotyped,Maui,NA,NA,Tracks,-156.237011,20.767742,no
 C-1318,Not genotyped,Maui,NA,NA,Yes,-156.236978,20.767728,no
 C-1321,Not genotyped,Maui,NA,NA,Yes,-156.339419,20.674856,no
-C-1323,Not genotyped,Molokai,NA,NA,Tracks,-156.965847,21.138183,no
-C-1324,Not genotyped,Maui,NA,NA,Tracks,-156.237142,20.767731,no
-C-1325,Not genotyped,Maui,NA,NA,Tracks,-156.338758,20.675289,no
-C-1326,Not genotyped,Maui,NA,NA,Tracks,-156.335925,20.682528,no
 C-1327,Not genotyped,Molokai,NA,NA,Yes,-156.965931,21.138097,no
-C-1330,Not genotyped,Molokai,NA,NA,Tracks,-156.9625744,21.13895227,no
 C-1331,Not genotyped,Molokai,NA,NA,Yes,-156.965194,21.138383,no
 C-1332,Not genotyped,Maui,NA,NA,Yes,-156.237044,20.7677,no
-C-1333,Not genotyped,Maui,NA,NA,Tracks,-156.337953,20.676378,no
-C-1334,Not genotyped,Molokai,NA,NA,Tracks,-156.962219,21.138736,no
 C-1335,Not genotyped,Molokai,NA,NA,Yes,-156.975492,21.138353,no
 C-1336,Not genotyped,Maui,NA,NA,Yes,-156.237081,20.76785,no
-C-1338,Not genotyped,Molokai,NA,NA,Tracks,-156.965936,21.138068,no
 C-1340,Not genotyped,Maui,NA,NA,Yes,-156.237028,20.767747,no
 C-1344,Not genotyped,Maui,NA,NA,Yes,-156.237133,20.767822,no
-C-1345,Not genotyped,Maui,NA,NA,Tracks,-156.337442,20.677167,no
-C-1346,Not genotyped,Molokai,NA,NA,Tracks,-156.965924,21.138029,no
-C-1350,Not genotyped,Molokai,NA,NA,Tracks,-156.965692,21.13825,no
-C-1353,Not genotyped,Maui,NA,NA,Tracks,-156.337178,20.678869,no
-C-1357,Not genotyped,Maui,NA,NA,Tracks,-156.337425,20.679342,no
-C-1358,Not genotyped,Molokai,NA,NA,Tracks,-156.965898,21.138031,no
-C-1361,Not genotyped,Maui,NA,NA,Tracks,-156.337531,20.679767,no
-C-1365,Not genotyped,Maui,NA,NA,Tracks,-156.3375388,20.67975544,no
-C-1375,Not genotyped,Maui,NA,NA,Tracks,-156.134989,20.833459,no
 C-1383,Not genotyped,Maui,NA,NA,Yes,-156.045447,20.663775,no
 C-1388,Not genotyped,Maui,NA,NA,Yes,-156.046514,20.663992,no
 C-1392,Not genotyped,Maui,NA,NA,Yes,-156.048233,20.664758,no
-C-1393,Not genotyped,Maui,NA,NA,Tracks,-156.044803,20.662875,no
 C-1398,Not genotyped,Maui,NA,NA,Yes,-156.049694,20.665028,no
-C-1399,Not genotyped,Maui,NA,NA,Tracks,-156.050472,20.665292,no
-C-1403,Not genotyped,Maui,NA,NA,Tracks,-156.050947,20.665419,no
-C-1404,Not genotyped,Maui,NA,NA,Tracks,-156.051308,20.667172,no
 C-1406,Not genotyped,Maui,NA,NA,Yes,-156.051453,20.667172,no
-C-1464,Not genotyped,Maui,NA,NA,Tracks,-156.236682,20.767667,no
-C-1466,Not genotyped,Maui,NA,NA,Tracks,-156.2367228,20.7675952,no
 C-1470,Not genotyped,Maui,NA,NA,Yes,-156.237166,20.767916,no
 C-1472,Not genotyped,Maui,NA,NA,Yes,-156.237109,20.767871,no
 C-1474,Not genotyped,Maui,NA,NA,Yes,-156.236737,20.768539,no
-C-1475,Not genotyped,Maui,NA,NA,Tracks,-156.324148,20.741655,no
 C-1476,Not genotyped,Maui,NA,NA,Yes,-156.3231545,20.7418607,no
-C-1478,Not genotyped,Maui,NA,NA,Tracks,-156.323137,20.741477,no
 C-1479,Not genotyped,Maui,NA,NA,Yes,-156.32326,20.741846,no
-C-1483,Not genotyped,Maui,NA,NA,Tracks,-156.278061,20.805685,no
-C-1484,Not genotyped,Maui,NA,NA,Tracks,-156.278061,20.805685,no
 C-1486,Not genotyped,Maui,NA,NA,Yes,-155.7052173,19.92253451,no
-C-1488,Not genotyped,Maui,NA,NA,Tracks,-156.278061,20.805685,no
 C-1490,Not genotyped,Maui,NA,NA,Yes,-155.7052173,19.92253451,no
-C-1497,Not genotyped,Maui,NA,NA,Tracks,-156.323365,20.742201,no
-C-1499,Not genotyped,Maui,NA,NA,Tracks,-156.323751,20.74169,no
-C-1503,Not genotyped,Maui,NA,NA,Tracks,-156.323611,20.741705,no
-C-1507,Not genotyped,Maui,NA,NA,Tracks,-156.278061,20.805685,no
 C-1514,Not genotyped,Maui,NA,NA,Yes,-156.04065,20.672082,no
-C-1516,Not genotyped,Maui,NA,NA,Tracks,-156.049029,20.664891,no
-C-1524,Not genotyped,Maui,NA,NA,Tracks,-156.043728,20.662289,no
-C-2525,Not genotyped,Maui,NA,NA,Tracks,-156.053103,20.669217,no
 C-2526,Not genotyped,Maui,NA,NA,Yes,-156.056753,20.673808,no
-C-2534,Not genotyped,Maui,NA,NA,Tracks,-156.045088,20.662485,no
 C-2535,Not genotyped,Maui,NA,NA,Yes,-156.186286,20.874497,no
 C-2538,Not genotyped,Maui,NA,NA,Yes,-156.069746,20.649771,no
-C-2541,Not genotyped,Maui,NA,NA,Tracks,-156.053494,20.669636,no
 C-2542,Not genotyped,Maui,NA,NA,Yes,-156.073693,20.650899,no
-C-2543,Not genotyped,Maui,NA,NA,Tracks,-156.1862851,20.87449836,no
 C-2561,Not genotyped,Maui,NA,NA,Yes,-156.055531,20.671114,no
-C-2569,Not genotyped,Maui,NA,NA,Tracks,-156.056222,20.671519,no
 C-2573,Not genotyped,Maui,NA,NA,Yes,-156.056261,20.672364,no
 C-2583,Not genotyped,Maui,NA,NA,Yes,-156.056206,20.675447,no
 C-2585,Not genotyped,Maui,NA,NA,Yes,-156.056914,20.675828,no
@@ -1144,296 +1350,90 @@ C-2588,Not genotyped,Maui,NA,NA,Yes,-156.056908,20.676083,no
 C-2589,Not genotyped,Maui,NA,NA,Yes,-156.056631,20.676119,no
 C-2590,Not genotyped,Maui,NA,NA,Yes,-156.056403,20.676775,no
 C-2592,Not genotyped,Maui,NA,NA,Yes,-156.049019,20.664889,no
-C-2595,Not genotyped,Maui,NA,NA,Tracks,-156.04903,20.66489,no
-C-2600,Not genotyped,Maui,NA,NA,Tracks,-156.049031,20.664811,no
 C-2606,Not genotyped,Maui,NA,NA,Yes,-156.125569,20.8162,no
-C-2613,Not genotyped,Maui,NA,NA,Tracks,-156.1310363,20.8182189,no
 C-2614,Not genotyped,Maui,NA,NA,Yes,-156.133087,20.820666,no
 C-2615,Not genotyped,Maui,NA,NA,Yes,-156.136464,20.822125,no
-C-2617,Not genotyped,Maui,NA,NA,Tracks,-156.136982,20.821591,no
-C-2619,Not genotyped,Maui,NA,NA,Tracks,-156.137743,20.820946,no
 C-2620,Not genotyped,Maui,NA,NA,Yes,-156.13799,20.820805,no
 C-2622,Not genotyped,Maui,NA,NA,Yes,-156.124325,20.81698,no
-C-2623,Not genotyped,Maui,NA,NA,Tracks,-156.134853,20.82969,no
 C-2625,Not genotyped,Maui,NA,NA,Yes,-156.136842,20.821963,no
-C-2628,Not genotyped,Maui,NA,NA,Tracks,-156.353742,20.706119,no
 C-2630,Not genotyped,Maui,NA,NA,Yes,-156.124198,20.816923,no
 C-2645,Not genotyped,Kauai,NA,NA,Yes,-159.676608,22.098756,no
-C-2650,Not genotyped,Kauai,NA,NA,Tracks,-159.6645,22.121997,no
-C-2651,Not genotyped,Kauai,NA,NA,Tracks,-159.664528,22.121972,no
 C-2652,Not genotyped,Kauai,NA,NA,Yes,-159.664442,22.122028,no
 C-2658,Not genotyped,Kauai,NA,NA,Yes,-159.664503,22.121878,no
 C-2659,Not genotyped,Kauai,NA,NA,Yes,-159.664453,22.121897,no
 C-2660,Not genotyped,Kauai,NA,NA,Yes,-159.664458,22.121864,no
-C-2668,Not genotyped,Big Island,NA,NA,Tracks,-155.228625,19.393117,no
-C-2670,Not genotyped,Big Island,NA,NA,Tracks,-155.949547,19.719219,no
-C-2671,Not genotyped,Big Island,NA,NA,Tracks,-155.219231,19.378903,no
-C-2676,Not genotyped,Big Island,NA,NA,Tracks,-155.231403,19.397111,no
-C-2679,Not genotyped,Big Island,NA,NA,Tracks,-155.223092,19.384692,no
-C-2681,Not genotyped,Big Island,NA,NA,Tracks,-155.2169,19.374839,no
-C-2682,Not genotyped,Big Island,NA,NA,Tracks,-155.218342,19.377203,no
-C-2685,Not genotyped,Big Island,NA,NA,Tracks,-155.216967,19.374511,no
-C-2686,Not genotyped,Big Island,NA,NA,Tracks,-155.217894,19.376281,no
-C-2690,Not genotyped,Big Island,NA,NA,Tracks,-155.223075,19.384625,no
-C-2695,Not genotyped,Big Island,NA,NA,Tracks,-155.229917,19.395722,no
-C-2697,Not genotyped,Big Island,NA,NA,Tracks,-155.219214,19.367033,no
-C-2700,Not genotyped,Big Island,NA,NA,Tracks,-155.140939,19.902211,no
-C-2702,Not genotyped,Kauai,NA,NA,Tracks,-159.660261,22.131531,no
 C-2706,Not genotyped,Kauai,NA,NA,Yes,-159.660358,22.13155,no
-C-2718,Not genotyped,Kauai,NA,NA,Tracks,-159.651342,22.124844,no
-C-2722,Not genotyped,Kauai,NA,NA,Tracks,-159.651433,22.124808,no
-C-2724,Not genotyped,Big Island,NA,NA,Tracks,-155.948889,19.718825,no
-C-2731,Not genotyped,Big Island,NA,NA,Tracks,-155.238239,19.412214,no
-C-2734,Not genotyped,Kauai,NA,NA,Tracks,-159.656144,22.1238,no
-C-2747,Not genotyped,Big Island,NA,NA,Tracks,-155.949464,19.719153,no
-C-2765,Not genotyped,Big Island,NA,NA,Tracks,-155.139911,19.904864,no
-C-2768,Not genotyped,Big Island,NA,NA,Tracks,-155.441481,20.036428,no
-C-2773,Not genotyped,Big Island,NA,NA,Tracks,-155.441681,20.036883,no
-C-2774,Not genotyped,Big Island,NA,NA,Tracks,-155.441625,20.036797,no
-C-2781,Not genotyped,Big Island,NA,NA,Tracks,-155.441728,20.036889,no
-C-2784,Not genotyped,Big Island,NA,NA,Tracks,-155.441828,20.03685,no
-C-2785,Not genotyped,Big Island,NA,NA,Tracks,-155.239192,19.426067,no
-C-2789,Not genotyped,Big Island,NA,NA,Tracks,-155.615408,19.076544,no
 C-2795,Not genotyped,Big Island,NA,NA,Yes,-155.281083,19.434306,no
-C-2796,Not genotyped,Big Island,NA,NA,Tracks,-155.215856,19.428175,no
-C-2797,Not genotyped,Big Island,NA,NA,Tracks,-155.253442,19.400497,no
-C-2799,Not genotyped,Big Island,NA,NA,Tracks,-155.236794,19.375836,no
 C-2800,Not genotyped,Big Island,NA,NA,Yes,-155.225767,19.371161,no
-C-2801,Not genotyped,Big Island,NA,NA,Tracks,-155.225361,19.371661,no
-C-2802,Not genotyped,Big Island,NA,NA,Tracks,-155.233961,19.373386,no
 C-2806,Not genotyped,Big Island,NA,NA,Yes,-155.224775,19.356728,no
 C-2807,Not genotyped,Big Island,NA,NA,Yes,-155.224933,19.354031,no
-C-2813,Not genotyped,Big Island,NA,NA,Tracks,-155.22245,19.423789,no
 C-2815,Not genotyped,Big Island,NA,NA,Yes,-155.221756,19.424228,no
-C-2817,Not genotyped,Big Island,NA,NA,Tracks,-155.222383,19.4239,no
 C-2819,Not genotyped,Big Island,NA,NA,Yes,-155.222278,19.424294,no
-C-2825,Not genotyped,Big Island,NA,NA,Tracks,-155.152275,19.854167,no
 C-2835,Not genotyped,Big Island,NA,NA,Yes,-155.117564,19.715992,no
 C-2837,Not genotyped,Big Island,NA,NA,Yes,-155.067208,19.589497,no
-C-2852,Not genotyped,Big Island,NA,NA,Tracks,-155.439908,20.03535,no
-C-2853,Not genotyped,Big Island,NA,NA,Tracks,-155.067906,19.590756,no
-C-2855,Not genotyped,Big Island,NA,NA,Tracks,-155.238369,19.413422,no
-C-2858,Not genotyped,Big Island,NA,NA,Tracks,-155.439603,20.035417,no
-C-2868,Not genotyped,Big Island,NA,NA,Tracks,-155.222447,19.423889,no
 C-2871,Not genotyped,Big Island,NA,NA,Yes,-155.237056,19.415014,no
-C-2872,Not genotyped,Big Island,NA,NA,Tracks,-155.222494,19.424061,no
 C-2874,Not genotyped,Big Island,NA,NA,Yes,-155.138281,19.714875,no
-C-2876,Not genotyped,Big Island,NA,NA,Tracks,-155.222481,19.424106,no
-C-2881,Not genotyped,Big Island,NA,NA,Tracks,-155.135425,19.904461,no
-C-2882,Not genotyped,Big Island,NA,NA,Tracks,-155.136294,19.905875,no
-C-2884,Not genotyped,Big Island,NA,NA,Tracks,-155.134347,19.904056,no
-C-2886,Not genotyped,Big Island,NA,NA,Tracks,-155.135875,19.905083,no
-C-2891,Not genotyped,Big Island,NA,NA,Tracks,-155.215906,19.428089,no
 C-2893,Not genotyped,Big Island,NA,NA,Yes,-155.438383,20.039881,no
 C-2895,Not genotyped,Big Island,NA,NA,Yes,-155.439597,20.039919,no
-C-2896,Not genotyped,Big Island,NA,NA,Tracks,-155.4397553,20.03992018,no
-C-2900,Not genotyped,Big Island,NA,NA,Tracks,-155.443814,20.040636,no
 C-2905,Not genotyped,Big Island,NA,NA,Yes,-155.067133,19.590792,no
-C-2908,Not genotyped,Big Island,NA,NA,Tracks,-155.14235300000001,19.90085,no
-C-2913,Not genotyped,Big Island,NA,NA,Tracks,-155.439531,20.037736,no
-C-2914,Not genotyped,Big Island,NA,NA,Tracks,-155.444806,20.040872,no
-C-2920,Not genotyped,Big Island,NA,NA,Tracks,-155.823164,19.111889,no
 C-2928,Not genotyped,Big Island,NA,NA,Yes,-155.664306,19.077031,no
-C-2931,Not genotyped,Big Island,NA,NA,Tracks,-155.477011,19.2024,no
-C-2932,Not genotyped,Big Island,NA,NA,Tracks,-155.483042,19.199917,no
-C-2941,Not genotyped,Big Island,NA,NA,Tracks,-155.235697,19.407644,no
-C-2943,Not genotyped,Big Island,NA,NA,Tracks,-155.303328,19.438633,no
-C-2947,Not genotyped,Big Island,NA,NA,Tracks,-155.232583,19.400919,no
-C-2948,Not genotyped,Big Island,NA,NA,Tracks,-155.232447,19.400278,no
 C-2949,Not genotyped,Big Island,NA,NA,Yes,-155.232639,19.400906,no
-C-2950,Not genotyped,Big Island,NA,NA,Tracks,-155.233097,19.401789,no
-C-2952,Not genotyped,Big Island,NA,NA,Tracks,-155.234903,19.405075,no
-C-2953,Not genotyped,Big Island,NA,NA,Tracks,-155.303375,19.438775,no
 C-2954,Not genotyped,Big Island,NA,NA,Yes,-155.234953,19.405203,no
 C-2956,Not genotyped,Big Island,NA,NA,Yes,-155.237122,19.410464,no
-C-2957,Not genotyped,Big Island,NA,NA,Tracks,-155.237086,19.410522,no
-C-2959,Not genotyped,Big Island,NA,NA,Tracks,-155.473442,20.047111,no
-C-2960,Not genotyped,Big Island,NA,NA,Tracks,-155.499228,20.049894,no
-C-2961,Not genotyped,Big Island,NA,NA,Tracks,-155.222486,19.423858,no
-C-2963,Not genotyped,Big Island,NA,NA,Tracks,-155.491111,20.050194,no
-C-2964,Not genotyped,Big Island,NA,NA,Tracks,-155.499158,20.049917,no
-C-2966,Not genotyped,Big Island,NA,NA,Tracks,-155.222497,19.423908,no
-C-2967,Not genotyped,Big Island,NA,NA,Tracks,-155.222456,19.4239,no
 C-2968,Not genotyped,Big Island,NA,NA,Yes,-155.069006,19.59055,no
 C-2970,Not genotyped,Big Island,NA,NA,Yes,-155.068172,19.589725,no
-C-2979,Not genotyped,Big Island,NA,NA,Tracks,-155.180931,19.4394,no
 C-2989,Not genotyped,Big Island,NA,NA,Yes,-155.440019,20.039544,no
-C-2998,Not genotyped,Big Island,NA,NA,Tracks,-155.23705,19.452197,no
 C-2999,Not genotyped,Big Island,NA,NA,Yes,-155.237092,19.453194,no
-C-3003,Not genotyped,Big Island,NA,NA,Tracks,-155.262894,19.432325,no
 C-3005,Not genotyped,Big Island,NA,NA,Yes,-155.263944,19.43265,no
-C-3006,Not genotyped,Big Island,NA,NA,Tracks,-155.265531,19.430161,no
-C-3008,Not genotyped,Big Island,NA,NA,Tracks,-155.264608,19.430097,no
-C-3009,Not genotyped,Big Island,NA,NA,Tracks,-155.263783,19.430011,no
-C-3012,Not genotyped,Big Island,NA,NA,Tracks,-155.259397,19.42985,no
-C-3013,Not genotyped,Big Island,NA,NA,Tracks,-155.303142,19.438531,no
-C-3014,Not genotyped,Big Island,NA,NA,Tracks,-155.26285,19.429875,no
-C-3015,Not genotyped,Big Island,NA,NA,Tracks,-155.258872,19.429622,no
-C-3017,Not genotyped,Big Island,NA,NA,Tracks,-155.304819,19.440447,no
 C-3020,Not genotyped,Big Island,NA,NA,Yes,-155.302228,19.442844,no
-C-3023,Not genotyped,Big Island,NA,NA,Tracks,-155.301939,19.442925,no
 C-3024,Not genotyped,Big Island,NA,NA,Yes,-155.304133,19.439686,no
-C-3025,Not genotyped,Big Island,NA,NA,Tracks,-155.262067,19.429597,no
 C-3029,Not genotyped,Big Island,NA,NA,Yes,-155.069311,19.590053,no
-C-3032,Not genotyped,Big Island,NA,NA,Tracks,-155.069056,19.590467,no
-C-3033,Not genotyped,Big Island,NA,NA,Tracks,-155.259344,19.430672,no
-C-3035,Not genotyped,Big Island,NA,NA,Tracks,-155.224797,19.355289,no
-C-3037,Not genotyped,Big Island,NA,NA,Tracks,-155.22485,19.354839,no
 C-3039,Not genotyped,Big Island,NA,NA,Yes,-155.222125,19.424558,no
-C-3040,Not genotyped,Big Island,NA,NA,Tracks,-155.259625,19.430828,no
-C-3041,Not genotyped,Big Island,NA,NA,Tracks,-155.222342,19.424381,no
 C-3042,Not genotyped,Big Island,NA,NA,Yes,-155.222436,19.424056,no
-C-3044,Not genotyped,Big Island,NA,NA,Tracks,-155.222089,19.424519,no
 C-3046,Not genotyped,Big Island,NA,NA,Yes,-155.222111,19.424494,no
 C-3049,Not genotyped,Big Island,NA,NA,Yes,-155.222036,19.424333,no
-C-3050,Not genotyped,Big Island,NA,NA,Tracks,-155.222053,19.424533,no
-C-3051,Not genotyped,Big Island,NA,NA,Tracks,-155.222131,19.423986,no
-C-3052,Not genotyped,Big Island,NA,NA,Tracks,-155.222189,19.424033,no
 C-3053,Not genotyped,Big Island,NA,NA,Yes,-155.222439,19.424075,no
-C-3054,Not genotyped,Big Island,NA,NA,Tracks,-155.222364,19.423831,no
-C-3056,Not genotyped,Big Island,NA,NA,Tracks,-155.224617,19.356067,no
-C-3057,Not genotyped,Big Island,NA,NA,Tracks,-155.068378,19.590575,no
-C-3059,Not genotyped,Big Island,NA,NA,Tracks,-155.222475,19.423833,no
-C-3060,Not genotyped,Big Island,NA,NA,Tracks,-155.222633,19.423947,no
-C-3066,Not genotyped,Big Island,NA,NA,Tracks,-155.578681,20.041714,no
-C-3067,Not genotyped,Big Island,NA,NA,Tracks,-155.441869,20.039817,no
-C-3069,Not genotyped,Big Island,NA,NA,Tracks,-155.068592,19.725608,no
 C-3072,Not genotyped,Big Island,NA,NA,Yes,-155.237536,19.453008,no
 C-3073,Not genotyped,Big Island,NA,NA,Yes,-155.067978,19.725778,no
 C-3077,Not genotyped,Big Island,NA,NA,Yes,-155.068331,19.590617,no
-C-3080,Not genotyped,Big Island,NA,NA,Tracks,-155.236931,19.452128,no
 C-3086,Not genotyped,Big Island,NA,NA,Yes,-155.672889,20.020514,no
-C-3087,Not genotyped,Big Island,NA,NA,Tracks,-155.438289,20.039922,no
-C-3091,Not genotyped,Big Island,NA,NA,Tracks,-155.438314,20.039108,no
 C-3095,Not genotyped,Big Island,NA,NA,Yes,-155.438175,20.039197,no
 C-3100,Not genotyped,Big Island,NA,NA,Yes,-155.441325,20.035953,no
-C-3101,Not genotyped,Big Island,NA,NA,Tracks,-155.222458,19.423869,no
 C-3104,Not genotyped,Big Island,NA,NA,Yes,-155.441183,20.035958,no
-C-3105,Not genotyped,Big Island,NA,NA,Tracks,-155.222481,19.423853,no
 C-3106,Not genotyped,Big Island,NA,NA,Yes,-155.515456,20.0667,no
-C-3109,Not genotyped,Big Island,NA,NA,Tracks,-155.520606,20.053303,no
-C-3111,Not genotyped,Big Island,NA,NA,Tracks,-155.438556,20.039914,no
-C-3113,Not genotyped,Big Island,NA,NA,Tracks,-155.513081,20.049936,no
-C-3116,Not genotyped,Big Island,NA,NA,Tracks,-155.615733,19.076644,no
-C-3117,Not genotyped,Big Island,NA,NA,Tracks,-155.506242,20.050242,no
 C-3118,Not genotyped,Big Island,NA,NA,Yes,-155.442194,20.039967,no
-C-3123,Not genotyped,Big Island,NA,NA,Tracks,-155.441056,20.037814,no
-C-3124,Not genotyped,Big Island,NA,NA,Tracks,-155.441792,20.036869,no
 C-3125,Not genotyped,Big Island,NA,NA,Yes,-155.474764,20.058511,no
-C-3126,Not genotyped,Big Island,NA,NA,Tracks,-155.818903,19.115214,no
-C-3127,Not genotyped,Big Island,NA,NA,Tracks,-155.443525,20.032403,no
 C-3129,Not genotyped,Big Island,NA,NA,Yes,-155.439422,20.039867,no
 C-3132,Not genotyped,Big Island,NA,NA,Yes,-155.136031,19.906139,no
-C-3139,Not genotyped,Big Island,NA,NA,Tracks,-155.441503,20.039906,no
-C-3140,Not genotyped,Big Island,NA,NA,Tracks,-155.134794,19.905064,no
-C-3141,Not genotyped,Big Island,NA,NA,Tracks,-155.441517,20.037208,no
 C-3144,Not genotyped,Big Island,NA,NA,Yes,-155.438253,20.039967,no
-C-3145,Not genotyped,Big Island,NA,NA,Tracks,-155.438519,20.038772,no
-C-3161,Not genotyped,Big Island,NA,NA,Tracks,-155.948608,19.719447,no
 C-3163,Not genotyped,Big Island,NA,NA,Yes,-155.4434,20.040486,no
-C-3166,Not genotyped,Big Island,NA,NA,Tracks,-155.823725,19.111136,no
-C-3168,Not genotyped,Big Island,NA,NA,Tracks,-155.441511,20.039856,no
-C-3170,Not genotyped,Big Island,NA,NA,Tracks,-155.4379,20.038883,no
-C-3172,Not genotyped,Big Island,NA,NA,Tracks,-155.134761,19.904239,no
-C-3175,Not genotyped,Big Island,NA,NA,Tracks,-155.441167,20.037453,no
-C-3184,Not genotyped,Big Island,NA,NA,Tracks,-155.239767,19.425681,no
-C-3185,Not genotyped,Big Island,NA,NA,Tracks,-155.443494,20.032353,no
-C-3187,Not genotyped,Big Island,NA,NA,Tracks,-155.624194,19.080883,no
-C-3196,Not genotyped,Big Island,NA,NA,Tracks,-155.194689,19.443014,no
 C-3198,Not genotyped,Big Island,NA,NA,Yes,-155.821142,19.113939,no
-C-3199,Not genotyped,Big Island,NA,NA,Tracks,-155.183528,19.44375,no
-C-3202,Not genotyped,Big Island,NA,NA,Tracks,-155.948806,19.718303,no
 C-3204,Not genotyped,Big Island,NA,NA,Yes,-155.440556,20.035678,no
-C-3206,Not genotyped,Big Island,NA,NA,Tracks,-155.620339,19.092408,no
-C-3207,Not genotyped,Big Island,NA,NA,Tracks,-155.239672,19.425922,no
-C-3215,Not genotyped,Big Island,NA,NA,Tracks,-155.239642,19.425936,no
-C-3216,Not genotyped,Big Island,NA,NA,Tracks,-155.441103,20.035983,no
-C-3219,Not genotyped,Big Island,NA,NA,Tracks,-155.2394,19.426167,no
 C-3222,Not genotyped,Big Island,NA,NA,Yes,-155.618167,19.097653,no
 C-3223,Not genotyped,Big Island,NA,NA,Yes,-155.239308,19.426172,no
-C-3227,Not genotyped,Big Island,NA,NA,Tracks,-155.239747,19.425733,no
 C-3231,Not genotyped,Big Island,NA,NA,Yes,-155.239642,19.425822,no
-C-3232,Not genotyped,Big Island,NA,NA,Tracks,-155.239103,19.426333,no
 C-3234,Not genotyped,Big Island,NA,NA,Yes,-155.619,19.096056,no
-C-3238,Not genotyped,Big Island,NA,NA,Tracks,-155.621433,19.078836,no
-C-3239,Not genotyped,Big Island,NA,NA,Tracks,-155.239736,19.425839,no
-C-3240,Not genotyped,Big Island,NA,NA,Tracks,-155.192975,19.440036,no
-C-3245,Not genotyped,Big Island,NA,NA,Tracks,-155.82475,19.117631,no
 C-3249,Not genotyped,Big Island,NA,NA,Yes,-155.825014,19.117381,no
-C-3253,Not genotyped,Big Island,NA,NA,Tracks,-155.819711,19.117583,no
-C-3255,Not genotyped,Big Island,NA,NA,Tracks,-155.824825,19.117742,no
 C-3256,Not genotyped,Big Island,NA,NA,Yes,-155.819853,19.114972,no
-C-3259,Not genotyped,Big Island,NA,NA,Tracks,-155.948519,19.719211,no
-C-3261,Not genotyped,Big Island,NA,NA,Tracks,-155.821853,19.119458,no
-C-3268,Not genotyped,Big Island,NA,NA,Tracks,-155.618558,19.089864,no
-C-3269,Not genotyped,Big Island,NA,NA,Tracks,-155.818461,19.115431,no
-C-3271,Not genotyped,Big Island,NA,NA,Tracks,-155.948725,19.720228,no
-C-3275,Not genotyped,Big Island,NA,NA,Tracks,-155.825208,19.117225,no
-C-3276,Not genotyped,Big Island,NA,NA,Tracks,-155.526464,19.748753,no
-C-3278,Not genotyped,Big Island,NA,NA,Tracks,-155.819044,19.115258,no
 C-3289,Not genotyped,Big Island,NA,NA,Yes,-155.820044,19.114761,no
-C-3291,Not genotyped,Big Island,NA,NA,Tracks,-155.819439,19.115244,no
 C-3292,Not genotyped,Big Island,NA,NA,Yes,-155.82085,19.114289,no
-C-3296,Not genotyped,Big Island,NA,NA,Tracks,-155.389261,19.345478,no
-C-3297,Not genotyped,Big Island,NA,NA,Tracks,-155.819872,19.114969,no
-C-3298,Not genotyped,Big Island,NA,NA,Tracks,-155.822006,19.119394,no
 C-3301,Not genotyped,Big Island,NA,NA,Yes,-154.902997,19.483211,no
-C-3302,Not genotyped,Big Island,NA,NA,Tracks,-155.069058,19.726106,no
-C-3303,Not genotyped,Big Island,NA,NA,Tracks,-155.069494,19.725292,no
 C-3311,Not genotyped,Big Island,NA,NA,Yes,-154.94225,19.496769,no
-C-3314,Not genotyped,Big Island,NA,NA,Tracks,-154.901197,19.483125,no
-C-3316,Not genotyped,Big Island,NA,NA,Tracks,-155.441756,20.036897,no
 C-3318,Not genotyped,Big Island,NA,NA,Yes,-154.90145,19.482678,no
-C-3321,Not genotyped,Big Island,NA,NA,Tracks,-154.902808,19.483389,no
-C-3323,Not genotyped,Big Island,NA,NA,Tracks,-155.443042,20.0337,no
 C-3326,Not genotyped,Big Island,NA,NA,Yes,-154.903158,19.483425,no
-C-3327,Not genotyped,Big Island,NA,NA,Tracks,-155.443053,20.034031,no
-C-3328,Not genotyped,Big Island,NA,NA,Tracks,-155.44125,20.037503,no
-C-3329,Not genotyped,Big Island,NA,NA,Tracks,-155.068147,19.726039,no
-C-3331,Not genotyped,Big Island,NA,NA,Tracks,-155.442911,20.034836,no
-C-3332,Not genotyped,Big Island,NA,NA,Tracks,-155.441431,20.037308,no
-C-3336,Not genotyped,Big Island,NA,NA,Tracks,-155.441778,20.036628,no
 C-3339,Not genotyped,Big Island,NA,NA,Yes,-155.442644,20.035433,no
 C-3340,Not genotyped,Big Island,NA,NA,Yes,-155.441781,20.036878,no
-C-3341,Not genotyped,Big Island,NA,NA,Tracks,-154.902847,19.482961,no
 C-3343,Not genotyped,Big Island,NA,NA,Yes,-155.442428,20.035983,no
-C-3345,Not genotyped,Big Island,NA,NA,Tracks,-154.902528,19.483144,no
-C-3346,Not genotyped,Big Island,NA,NA,Tracks,-154.904214,19.482925,no
-C-3351,Not genotyped,Big Island,NA,NA,Tracks,-155.442083,20.036456,no
 C-3352,Not genotyped,Big Island,NA,NA,Yes,-155.162314,19.932164,no
 C-3354,Not genotyped,Big Island,NA,NA,Yes,-154.975172,19.544039,no
-C-3355,Not genotyped,Big Island,NA,NA,Tracks,-155.441744,20.036864,no
-C-3359,Not genotyped,Big Island,NA,NA,Tracks,-155.44175,20.036861,no
-C-3369,Not genotyped,Big Island,NA,NA,Tracks,-154.903356,19.483244,no
-C-3373,Not genotyped,Big Island,NA,NA,Tracks,-154.903017,19.483386,no
 C-3376,Not genotyped,Big Island,NA,NA,Yes,-155.618094,19.098025,no
-C-3377,Not genotyped,Big Island,NA,NA,Tracks,-154.902847,19.483406,no
 C-3381,Not genotyped,Big Island,NA,NA,Yes,-154.903658,19.482756,no
-C-3384,Not genotyped,Big Island,NA,NA,Tracks,-155.619686,19.092197,no
 C-3385,Not genotyped,Big Island,NA,NA,Yes,-154.902467,19.483889,no
-C-3389,Not genotyped,Big Island,NA,NA,Tracks,-154.902725,19.483572,no
 C-3392,Not genotyped,Big Island,NA,NA,Yes,-155.619556,19.094808,no
-C-3393,Not genotyped,Big Island,NA,NA,Tracks,-154.901461,19.483572,no
-C-3396,Not genotyped,Big Island,NA,NA,Tracks,-155.619719,19.094339,no
 C-3401,Not genotyped,Big Island,NA,NA,Yes,-154.901406,19.483347,no
-C-3407,Not genotyped,Big Island,NA,NA,Tracks,-155.239919,19.425508,no
-C-3408,Not genotyped,Big Island,NA,NA,Tracks,-155.233567,19.430089,no
-C-3409,Not genotyped,Big Island,NA,NA,Tracks,-154.902547,19.483386,no
-C-3411,Not genotyped,Big Island,NA,NA,Tracks,-155.239869,19.425756,no
-C-3416,Not genotyped,Big Island,NA,NA,Tracks,-155.240017,19.425533,no
-C-3420,Not genotyped,Big Island,NA,NA,Tracks,-155.239767,19.425556,no
-C-3425,Not genotyped,Big Island,NA,NA,Tracks,-155.239361,19.426028,no
-C-3429,Not genotyped,Big Island,NA,NA,Tracks,-155.239181,19.426292,no
-C-3437,Not genotyped,Big Island,NA,NA,Tracks,-155.239558,19.426181,no
-C-3441,Not genotyped,Big Island,NA,NA,Tracks,-155.239789,19.425775,no
-C-3486,Not genotyped,Big Island,NA,NA,Tracks,-155.162911,19.932525,no
 C-3493,Not genotyped,Big Island,NA,NA,Yes,-155.092183,19.783583,no
 C-3497,Not genotyped,Big Island,NA,NA,Yes,-155.095869,19.7931,no
 C-3502,Not genotyped,Big Island,NA,NA,Yes,-155.207389,19.964367,no
-C-3509,Not genotyped,Big Island,NA,NA,Tracks,-155.101483,19.850811,no
-C-3514,Not genotyped,Big Island,NA,NA,Tracks,-155.220867,19.952739,no
-C-3517,Not genotyped,Big Island,NA,NA,Tracks,-155.141383,19.906744,no
-C-3518,Not genotyped,Big Island,NA,NA,Tracks,-155.223633,19.950136,no
 C-3529,Not genotyped,Big Island,NA,NA,Yes,-155.154103,19.922539,no
 C-0001,PCR -,Oahu,Unknown,0,Yes,-157.724406,21.304203,no
 C-0002,PCR -,Oahu,Unknown,0,Yes,-157.724256,21.305489,no

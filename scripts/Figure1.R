@@ -24,6 +24,19 @@ species_palette <- c("C. elegans" = "#BE0032", #7
                      "Other PCR +" = "#008856", #10
                      "PCR -" = "#848482", #9
                      "Not genotyped" = "#F2F3F4", #1
+                     "Tracks only" = "#b3b3b3", #manual
+                     "No Nematode" = "#222222")  #2
+
+species_palette <- c("C. elegans" = "#222222", #7
+                     "C. oiwi" =  "#222222", #4 
+                     "C. tropicalis" = "#222222", #5 
+                     "Panagrolaimus sp." = "#222222", #8
+                     "Oscheius sp." = "#222222", #3
+                     "C. briggsae" = "#222222", #6 
+                     "Other PCR +" = "#222222", #10
+                     "PCR -" = "#222222", #9
+                     "Not genotyped" = "#F2F3F4", #1
+                     "Tracks only" = "#BE0032", #manual
                      "No Nematode" = "#222222")  #2
 
 island_palette <- c("Kauai" = "#E69F00",
@@ -64,9 +77,10 @@ mget_map <- memoise(gtmap)
 ####################################################
 # setup overview plot groups
 plot_spp_ids <- data1 %>%
-  dplyr::mutate(collection_type = ifelse(worms_on_sample %in% c("No","?"), "No Nematode",
-                                         ifelse(is.na(species_id), "Not genotyped",
-                                                ifelse(pcr_positive == 0, "PCR -",
+  dplyr::mutate(collection_type = ifelse(worms_on_sample %in% c("No", "?"), "No Nematode",
+                                   ifelse(worms_on_sample == "Tracks", "Tracks only",
+                                          ifelse(worms_on_sample == "Yes" & is.na(pcr_positive), "Not genotyped",
+                                                 ifelse(worms_on_sample == "Yes" & pcr_positive == 0, "PCR -",
                                                        ifelse(species_id %in% c("Chabertia ovina",
                                                                                 "Choriorhabditis cristata",
                                                                                 "Choriorhabditis sp.",
@@ -82,7 +96,7 @@ plot_spp_ids <- data1 %>%
                                                                                 "Oscheius sp.",
                                                                                 "Panagrolaimus sp.",
                                                                                 NA),
-                                                              "Other PCR +", species_id))))) %>%
+                                                              "Other PCR +", species_id)))))) %>%
   dplyr::select(c_label, collection_type, island, species_id, pcr_positive, worms_on_sample, longitude, latitude) %>%
   dplyr::distinct(c_label, collection_type, .keep_all=T) %>% 
   dplyr::group_by(c_label) %>%
@@ -97,6 +111,7 @@ plot_spp_ids <- data1 %>%
                                                        "Other PCR +",
                                                        "PCR -",
                                                        "Not genotyped",
+                                                       "Tracks only",
                                                        "No Nematode")) %>%
   dplyr::arrange(collection_type) %>% # arrange sets order for c-labels with multiples so highest priority collection type is on top
   dplyr::distinct(c_label, .keep_all = T) %>% # selects highest priority collection type from a c-label with multiple collection types on it
@@ -117,7 +132,7 @@ bar_chart <- plot_spp_ids %>%
   dplyr::ungroup() %>%
   dplyr::distinct(collection_type, island, .keep_all = T) %>%
   dplyr::mutate(island = factor(island, levels = names(island_palette))) %>%
-  dplyr::mutate(collection_type = factor(collection_type, levels = c("No Nematode", "Not genotyped", "PCR -", "Other PCR +", "C. briggsae", "C. tropicalis", "C. oiwi", "C. elegans")))
+  dplyr::mutate(collection_type = factor(collection_type, levels = c("No Nematode", "Tracks only", "Not genotyped", "PCR -", "Other PCR +", "C. briggsae", "C. tropicalis", "C. oiwi", "C. elegans")))
 
 # Fig2B plot for rhabditida positive collections
 plot_bar_chart <- ggplot(data = bar_chart) +
@@ -250,4 +265,4 @@ ggsave('plots/Figure1.pdf', width = 12, height = 9)
 
 # # Write data used for this plot
 # plot_spp_ids %>%
-#   readr::write_csv("data/elife_files/fig1-data1.csv")
+# readr::write_csv("data/elife_files/fig1-data1.csv")

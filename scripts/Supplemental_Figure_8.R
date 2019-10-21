@@ -1,109 +1,54 @@
 #!/usr/bin/env Rscript
 #Load necessary packages
-#treeMix v. 1.13 is required to run this script
 library(tidyverse)
+library(ggtern)
 
 # set working directory
 setwd(glue::glue("{dirname(rstudioapi::getActiveDocumentContext()$path)}/.."))
 
-#define outgroup as XZ1516
-outgroup_strain <- "ECA191"
+# define a color pallette with maximal contrast
+ancestry.colours <- c("A"="gold2", "B"="plum4","C"= "darkorange1", 
+                      "D"="lightskyblue2", "E"="firebrick","F"= "burlywood3", "G"="gray51", 
+                      "H"="springgreen4", "I"="lightpink2", "J"="deepskyblue4", "WHOLE_POPULATION"="black", 
+                      "K"="mediumpurple4","L"= "orange","M"= "maroon","N"= "yellow3","O"= "brown4", 
+                      "P"="yellow4", "Q"="sienna4", "R"="chocolate", "S"="gray19")
 
-sample_names <- sort(data.table::fread("data/ANNOTATE_VCF/samples.txt", header = F) %>% dplyr::pull(V1))
+# assign Hawaii isotypes
+hi_only_samples <- read.csv(file = "data/fulcrum/hawaii_isotypes.csv") 
 
-# define K to use for analysis
-K = 11
+# load admix info for full 276_set
+admix <- data.table::fread("data/ADMIXTURE/full/BEST_K/K11_Processed_Ancestry.tsv") %>%
+  dplyr::rename(isotype = samples) %>%
+  tidyr::gather(pop, frac_pop, - isotype) %>%
+  dplyr::group_by(isotype) %>%
+  dplyr::mutate(max_pop_frac = max(frac_pop)) %>%
+  dplyr::ungroup() %>%
+  dplyr::arrange(pop, max_pop_frac) %>%
+  dplyr::mutate(isotype = factor(isotype)) %>%
+  dplyr::group_by(isotype) %>%
+  dplyr::mutate(pop_assignment = ifelse(max_pop_frac == frac_pop, pop, NA)) %>%
+  dplyr::arrange(isotype, pop_assignment) %>%
+  tidyr::fill(pop_assignment) %>%
+  tidyr::spread(pop, frac_pop) %>%
+  dplyr::ungroup() %>%
+  dplyr::mutate(Hawaiian = ifelse(isotype %in% hi_only_samples$isotype, "TRUE", "FALSE"))
 
-# load P files from ADMIXTURE analysis
-pfile_name <- grep(pattern = glue::glue("{K}\\.P$"), value = T, x = list.files("data/ADMIXTURE/full/BEST_K/"))
-pfile <- pophelper::readQ(files = paste0("data/ADMIXTURE/full/BEST_K/",pfile_name))[[1]]
+#generate ternery plots
+plotEH <- admix %>%
+   dplyr::filter(!pop_assignment %in% c("A", "B", "D", "F", "G", "I", "J", "K")) %>%
+   dplyr::select(isotype, pop_assignment, E, C, H)
 
-# label P file rownames and colnames
-colnames(pfile) <- LETTERS[1:K]
-
-# Make treemix input
-treemix_input <- apply(pfile, MARGIN = c(1,2), function(x){
-  f <- round(x*length(sample_names),digits = 0)
-  paste(length(sample_names)-f, f, sep = ",")
-})
-
-# find outgroup population
-# load Q files
-qfile_name <- grep(pattern = glue::glue("{K}\\.Q$"), value = T, x = list.files("data/ADMIXTURE/full/BEST_K/"))
-qfile <- pophelper::readQ(files = paste0("data/ADMIXTURE/full/BEST_K/",qfile_name))[[1]]
-# add pop names
-colnames(qfile) <- LETTERS[1:K]
-qfile$strain <- sample_names
-
-outgroup_population <- qfile%>%
-  dplyr::filter(strain == outgroup_strain)%>%
-  tidyr::gather(Population, Frequency, -strain)%>%
-  dplyr::filter(Frequency == max(Frequency))
-
-write.table(x = treemix_input,
-            file = glue::glue("data/ADMIXTURE/full/K-{K}_Outgroup={outgroup_population$Population[1]}=TREEMIX_input.txt"),
-            quote = F,
-            col.names = T,
-            row.names = F)
-
-treemix_input_name <- strsplit(glue::glue("data/ADMIXTURE/full/K-{K}_Outgroup={outgroup_population$Population[1]}=TREEMIX_input.txt"),
-                               split = "/")[[1]][4]
-
-system(glue::glue("gzip data/ADMIXTURE/full/{treemix_input_name}"))
-
-outgroup_pop <- outgroup_population$Population[1]
-
-output_name <- strsplit(strsplit(glue::glue("data/ADMIXTURE/full/K-{K}_Outgroup={outgroup_population$Population[1]}=TREEMIX_input.txt"),
-                                 split = "/")[[1]][4], split = "\\.txt")[[1]][1]
-
-#Running treemix with migration up to five events
-for(m in 1:5){
-  system(glue::glue("treemix -i data/ADMIXTURE/full/{treemix_input_name}.gz -o data/ADMIXTURE/full/{output_name}_{m} -root {outgroup_pop} -k 500 -m {m} -se"))
-}
-
-# load functions for ploting TreeMix output
-source("scripts/PLOT_TREEMIX.R")
-
-#Plot all treemix plots and residual plots
-for(migration in gsub("\\.llik","",grep(glue::glue("K-{K}"), grep("llik",list.files("data/ADMIXTURE/full"),value = T), value = T))){
-  
-  system(paste0(paste0("printf \"", paste(LETTERS[1:K], collapse = '\n')), '\n\" > data/ADMIXTURE/full/poporder'))
-  
-  pdf(glue::glue("plots/TREEMIX_phylogeny_{migration}_migrations.pdf"))
-  plot_tree(stem =  glue::glue("data/ADMIXTURE/full/{migration}"))
-  dev.off()
-  
-  pdf(glue::glue("plots/TREEMIX_phylogeny_{migration}_migrations_RESIDUALS.pdf"))
-  plot_resid(stem = glue::glue("data/ADMIXTURE/full/{migration}"), "data/ADMIXTURE/full/poporder")
-  dev.off()
-  # 
-}
-
-# Plot Supplemental Figure 8
-Figure8A_1 <- as.ggplot(image_read("plots/TREEMIX_phylogeny_K-11_Outgroup=H=TREEMIX_input_migrations.pdf", density = 300))
-Figure8A_2 <- as.ggplot(image_read("plots/TREEMIX_phylogeny_K-11_Outgroup=H=TREEMIX_input_migrations_RESIDUALS.pdf", density = 300))
-
-Figure8B_1 <- as.ggplot(image_read("plots/TREEMIX_phylogeny_K-11_Outgroup=H=TREEMIX_input_1_migrations.pdf", density = 300))
-Figure8B_2 <- as.ggplot(image_read("plots/TREEMIX_phylogeny_K-11_Outgroup=H=TREEMIX_input_1_migrations_RESIDUALS.pdf", density = 300))
-
-Figure8C_1 <- as.ggplot(image_read("plots/TREEMIX_phylogeny_K-11_Outgroup=H=TREEMIX_input_2_migrations.pdf", density = 300))
-Figure8C_2 <- as.ggplot(image_read("plots/TREEMIX_phylogeny_K-11_Outgroup=H=TREEMIX_input_2_migrations_RESIDUALS.pdf", density = 300))
-
-Figure8D_1 <- as.ggplot(image_read("plots/TREEMIX_phylogeny_K-11_Outgroup=H=TREEMIX_input_3_migrations.pdf", density = 300))
-Figure8D_2 <- as.ggplot(image_read("plots/TREEMIX_phylogeny_K-11_Outgroup=H=TREEMIX_input_3_migrations_RESIDUALS.pdf", density = 300))
-
-Figure8E_1 <- as.ggplot(image_read("plots/TREEMIX_phylogeny_K-11_Outgroup=H=TREEMIX_input_4_migrations.pdf", density = 300))
-Figure8E_2 <- as.ggplot(image_read("plots/TREEMIX_phylogeny_K-11_Outgroup=H=TREEMIX_input_4_migrations_RESIDUALS.pdf", density = 300))
-
-Figure8F_1 <- as.ggplot(image_read("plots/TREEMIX_phylogeny_K-11_Outgroup=H=TREEMIX_input_5_migrations.pdf", density = 300))
-Figure8F_2 <- as.ggplot(image_read("plots/TREEMIX_phylogeny_K-11_Outgroup=H=TREEMIX_input_5_migrations_RESIDUALS.pdf", density = 300))
-
-Supp_Figure_8 <- cowplot::plot_grid(Figure8A_1, Figure8A_2, Figure8B_1, Figure8B_2, 
-                   Figure8C_1, Figure8C_2, Figure8D_1, Figure8D_2,
-                   Figure8E_1, Figure8E_2, Figure8F_1, Figure8F_2,
-                   ncol = 4, nrow = 3, labels = c("A", "", "B", "",
-                                                  "C", "", "D", "",
-                                                  "E", "", "F", ""))
+Supp_Figure_8 <-  ggtern(data=plotEH,aes(E, C, H,fill=pop_assignment)) +
+    scale_fill_manual(values = ancestry.colours) +
+    theme_classic() +
+    #theme_rgbw() +
+    geom_point(size = 3, shape = 21) + 
+    tern_limit(T = 1.1, L = 1.1, R = 1.1) +
+    labs(x="HI Div.",y="Global C",z="Vol.",title="")
 Supp_Figure_8
 
-ggsave('plots/Supplemental Figure 8.pdf', height = 5, width = 7.5, useDingbats = F)
+ggsave(paste("plots/Supplemental Figure 8.pdf"), width = 3.75, height = 3.75, useDingbats=FALSE)
+
+# # Write data for ternary plot including all isotypes in ancestral populations C, E, H
+# plotEH %>%
+# readr::write_csv(., "data/elife_files/supp-fig8-data1.csv")

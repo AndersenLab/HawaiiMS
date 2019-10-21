@@ -1,34 +1,34 @@
 fixed_substrate,worm_per_substrate,total_substrates,perc_worm_sub,plot_type
-Invertebrate,4,35,11.428571428571429,PCR -
-Invertebrate,1,35,2.857142857142857,Not genotyped
-Invertebrate,30,35,85.71428571428571,No nematode
-Other,3,73,4.10958904109589,Caenorhabditis
-Other,5,73,6.8493150684931505,Other PCR +
-Other,19,73,26.027397260273972,PCR -
-Other,9,73,12.32876712328767,Not genotyped
-Other,10,73,13.698630136986301,Tracks only
-Other,27,73,36.986301369863014,No nematode
-Fungus,5,121,4.132231404958678,Caenorhabditis
-Fungus,1,121,0.8264462809917356,Other PCR +
-Fungus,23,121,19.00826446280992,PCR -
-Fungus,14,121,11.570247933884298,Not genotyped
-Fungus,25,121,20.66115702479339,Tracks only
-Fungus,53,121,43.80165289256198,No nematode
+Invertebrate,4,36,11.11111111111111,PCR -
+Invertebrate,1,36,2.7777777777777777,Not genotyped
+Invertebrate,31,36,86.11111111111111,No nematode
+Vegetation,3,82,3.6585365853658534,Caenorhabditis
+Vegetation,4,82,4.878048780487805,Other PCR +
+Vegetation,20,82,24.390243902439025,PCR -
+Vegetation,13,82,15.853658536585366,Not genotyped
+Vegetation,12,82,14.634146341463413,Tracks only
+Vegetation,30,82,36.58536585365854,No nematode
+Fungus,5,122,4.098360655737705,Caenorhabditis
+Fungus,1,122,0.819672131147541,Other PCR +
+Fungus,23,122,18.852459016393443,PCR -
+Fungus,14,122,11.475409836065573,Not genotyped
+Fungus,25,122,20.491803278688526,Tracks only
+Fungus,54,122,44.26229508196721,No nematode
 Flower,40,202,19.801980198019802,Caenorhabditis
 Flower,1,202,0.49504950495049505,Other PCR +
 Flower,23,202,11.386138613861387,PCR -
 Flower,16,202,7.920792079207921,Not genotyped
 Flower,18,202,8.91089108910891,Tracks only
 Flower,104,202,51.48514851485149,No nematode
-Fruit/nut/veg,33,333,9.90990990990991,Caenorhabditis
-Fruit/nut/veg,6,333,1.8018018018018018,Other PCR +
-Fruit/nut/veg,45,333,13.513513513513514,PCR -
-Fruit/nut/veg,47,333,14.114114114114114,Not genotyped
-Fruit/nut/veg,32,333,9.60960960960961,Tracks only
-Fruit/nut/veg,170,333,51.051051051051054,No nematode
-Leaf litter,76,1480,5.135135135135135,Caenorhabditis
-Leaf litter,63,1480,4.256756756756757,Other PCR +
-Leaf litter,480,1480,32.432432432432435,PCR -
-Leaf litter,206,1480,13.918918918918918,Not genotyped
-Leaf litter,346,1480,23.37837837837838,Tracks only
-Leaf litter,309,1480,20.87837837837838,No nematode
+Fruit,33,327,10.091743119266056,Caenorhabditis
+Fruit,6,327,1.834862385321101,Other PCR +
+Fruit,44,327,13.455657492354739,PCR -
+Fruit,43,327,13.149847094801222,Not genotyped
+Fruit,30,327,9.174311926605505,Tracks only
+Fruit,171,327,52.293577981651374,No nematode
+Leaf litter,76,1494,5.087014725568943,Caenorhabditis
+Leaf litter,60,1494,4.016064257028113,Other PCR +
+Leaf litter,484,1494,32.396251673360105,PCR -
+Leaf litter,206,1494,13.788487282463185,Not genotyped
+Leaf litter,346,1494,23.15930388219545,Tracks only
+Leaf litter,322,1494,21.5528781793842,No nematode

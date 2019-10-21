@@ -25,15 +25,15 @@ species_palette <- c("C. elegans" = "#BE0032", #7
                      "Caenorhabditis" = "#C2B280", #8
                      "PCR -" = "#848482", #9
                      "Not genotyped" = "#F2F3F4", #1
-                     "No Worm" = "#222222", #2
+                     "No nematode" = "#222222", #2
                      "multiple" = "#FFFFFF") 
 
 substrate_palette <- c("Leaf litter" = "#E68FAC",
-                       "Fruit/nut/veg" = "#0067A5",
+                       "Fruit" = "#0067A5",
                        "Flower" = "#DCD300",
                        "Fungus" = "#604E97",
                        "Compost" = "#F6A600",
-                       "Other" = "#B3446C")
+                       "Vegetation" = "#B3446C")
 
 allPalette <- c("Caenorhabditis" = "#C2B280",
                 "Other PCR +" = "#008856",
@@ -50,12 +50,14 @@ rh_positive_c_labels <- data1 %>%
   dplyr::filter(pcr_positive == 1) %>%
   dplyr::distinct(c_label) 
 
+
+
 #Figure 2A df for all collections broken into braod collection categories (i.e., No worm, tracks, not genptyped, pcr-, pcr+)
 worms <- data1 %>%
-  dplyr::filter(worms_on_sample != "?") %>%
-  dplyr::mutate(plot_type = ifelse(worms_on_sample == "No", "No nematode",
+  #dplyr::filter(worms_on_sample != "?") %>% # originally we filtered out ? c-labels but now we are assigning them to No Nematodes
+  dplyr::mutate(plot_type = ifelse(worms_on_sample %in% c("?","No"), "No nematode",
                                          ifelse(worms_on_sample == "Tracks", "Tracks only",
-                                                ifelse(worms_on_sample == "Yes" & is.na(pcr_positive), "Not genotyped",
+                                                ifelse((worms_on_sample == "Yes" & is.na(pcr_positive) | (pcr_positive == 1 & species_id == "Unknown")), "Not genotyped",
                                                   ifelse(worms_on_sample == "Yes" & pcr_positive == 0, "PCR -",
                                                         ifelse(worms_on_sample == "Yes" & pcr_positive == 1 & !(species_id %in% c("C. elegans",
                                                                                                                                 "C. briggsae",
@@ -80,15 +82,20 @@ worms <- data1 %>%
   dplyr::select(fixed_substrate, worm_per_substrate, total_substrates, perc_worm_sub, plot_type) %>%
   dplyr::ungroup() %>%
   dplyr::mutate(plot_type = factor(plot_type, levels = rev(names(allPalette)))) %>%
-  dplyr::mutate(fixed_substrate = factor(fixed_substrate, levels = rev(c("Leaf litter","Fruit/nut/veg", "Flower", "Fungus",
-                                                                         "Invertebrate", "Other"))))
+  dplyr::mutate(fixed_substrate = factor(fixed_substrate, levels = rev(c("Leaf litter","Fruit", "Flower", "Fungus",
+                                                                         "Vegetation", "Invertebrate"))))
 
 # plot for all collections
 Fig2A <- ggplot(worms) +
   geom_bar(stat = "identity", aes(x = factor(fixed_substrate), y = perc_worm_sub, fill = plot_type), colour = "black") + 
   scale_fill_manual(values=c(allPalette))+
   coord_flip() + 
-  theme(axis.title = element_text(size = 10, color = "black"),
+  theme(panel.border = element_blank(),
+        axis.line = element_line(colour = "black"),
+        panel.background = element_blank(),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        axis.title = element_text(size = 10, color = "black"),
         axis.text = element_text(size = 10, color = "black"),
         legend.text = element_text(size = 10, color = "black")) +
   labs(fill = "", x = "", y = "Percentage of all collections") +
@@ -125,16 +132,16 @@ newdf <- data1 %>%
 # Fig2B plot for rhabditida positive collections
 newdf_2 <- newdf %>%
   dplyr::mutate(tot_sub = case_when(
-    fixed_substrate == "Leaf litter" ~ 1480,
-    fixed_substrate == "Fruit/nut/veg" ~ 333,
+    fixed_substrate == "Leaf litter" ~ 1493,
+    fixed_substrate == "Fruit" ~ 327,
     fixed_substrate == "Flower" ~ 202,
-    fixed_substrate == "Fungus" ~ 121,
-    fixed_substrate == "Other" ~ 73),
+    fixed_substrate == "Fungus" ~ 122,
+    fixed_substrate == "Vegetation" ~ 83),
     perc_worm_sub2 = (worm_per_substrate/tot_sub)*100) %>%
   dplyr::select(species_family, fixed_substrate, perc_worm_sub2)
 
-species_family <- c("C. tropicalis", "C. tropicalis", "C. oiwi", "C. oiwi", "C. oiwi", "C. elegans")
-fixed_substrate <- c("Fungus", "Other", "Other", "Leaf litter", "Fungus", "Fungus")
+species_family <- c("C. tropicalis", "C. oiwi", "C. oiwi", "C. oiwi", "C. elegans")
+fixed_substrate <- c("Fungus", "Vegetation", "Leaf litter", "Fungus", "Fungus")
 temp <- data.frame(species_family, fixed_substrate)
 
 # join to fill out dataframe
@@ -146,8 +153,13 @@ newdf_2 <- full_join(newdf_2, temp) %>%
 Fig2B_v2 <- ggplot(data = newdf_2) +
   geom_bar(stat = "identity", position = "dodge", aes(x = factor(fixed_substrate), y = perc_worm_sub2, fill = species_family), colour = "black") +
   scale_fill_manual(values=c(species_palette)) +
-  coord_flip() + 
-  theme(axis.title = element_text(size = 10, color = "black"),
+  coord_flip() +
+  theme(panel.border = element_blank(),
+        axis.line = element_line(colour = "black"),
+        panel.background = element_blank(),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        axis.title = element_text(size = 10, color = "black"),
         axis.text = element_text(size = 10, color = "black"),
         legend.text = element_text(size = 10, color = "black")) +
   labs(fill = "", x = "", y = "Percentage of all collections") +
@@ -178,7 +190,7 @@ mdf <- data1 %>%
   dplyr::select(c_label, substrate, species_id, photo_url_thumb, plot_labels )
 
 spp <- rep(c("C. elegans", "C. briggsae", "C. tropicalis", "C. oiwi"), each = 3)
-type <- rep(c("Leaf litter", "Flower", "Fruit/nut/veg"), 4)
+type <- rep(c("Leaf litter", "Flower", "Fruit"), 4)
 c_label <- c("C-3133", "C-0736", "C-2830", NA,"C-0257", "C-0072",
              "C-1083", "C-2909", "C-2906", "C-2735", "C-0846", "C-2845")
 
@@ -199,7 +211,7 @@ d<- textGrob("C. oiwi")
 
 sa <- textGrob("Leaf litter")
 sb <- textGrob("Flower")
-sc <- textGrob("Fruit/nut/veg")
+sc <- textGrob("Fruit")
 
 yaxis <- grid.arrange(z,a,d,c,b, ncol = 1)
 xaxis <- grid.arrange(sa,sb,sc, nrow = 1)
@@ -251,11 +263,11 @@ pairwiseNominalIndependence(chi_sub_test,
 FE_test_ce <- newdf %>%
   dplyr::filter(species_family == "C. elegans") %>%
   dplyr::mutate(tot_sub = case_when(
-                                    fixed_substrate == "Leaf litter" ~ 1480,
-                                    fixed_substrate == "Fruit/nut/veg" ~ 333,
+                                    fixed_substrate == "Leaf litter" ~ 1493,
+                                    fixed_substrate == "Fruit" ~ 327,
                                     fixed_substrate == "Flower" ~ 202,
-                                    fixed_substrate == "Fungus" ~ 121,
-                                    fixed_substrate == "Other" ~ 73),
+                                    fixed_substrate == "Fungus" ~ 122,
+                                    fixed_substrate == "Vegetation" ~ 83),
                 no_ce = tot_sub-worm_per_substrate,
                 ce = worm_per_substrate) %>%
   dplyr::select(fixed_substrate, no_ce, ce) %>%
@@ -265,11 +277,11 @@ FE_test_ce <- newdf %>%
 FE_test_co <- newdf %>%
   dplyr::filter(species_family == "C. oiwi") %>%
   dplyr::mutate(tot_sub = case_when(
-    fixed_substrate == "Leaf litter" ~ 1480,
-    fixed_substrate == "Fruit/nut/veg" ~ 333,
+    fixed_substrate == "Leaf litter" ~ 1493,
+    fixed_substrate == "Fruit" ~ 327,
     fixed_substrate == "Flower" ~ 202,
-    fixed_substrate == "Fungus" ~ 121,
-    fixed_substrate == "Other" ~ 73),
+    fixed_substrate == "Fungus" ~ 122,
+    fixed_substrate == "Vegetation" ~ 83),
     no_co = tot_sub-worm_per_substrate,
     co = worm_per_substrate) %>%
   dplyr::select(fixed_substrate, no_co, co) %>%
@@ -279,11 +291,11 @@ FE_test_co <- newdf %>%
 FE_test_ct <- newdf %>%
   dplyr::filter(species_family == "C. tropicalis") %>%
   dplyr::mutate(tot_sub = case_when(
-    fixed_substrate == "Leaf litter" ~ 1480,
-    fixed_substrate == "Fruit/nut/veg" ~ 333,
+    fixed_substrate == "Leaf litter" ~ 1493,
+    fixed_substrate == "Fruit" ~ 327,
     fixed_substrate == "Flower" ~ 202,
-    fixed_substrate == "Fungus" ~ 121,
-    fixed_substrate == "Other" ~ 73),
+    fixed_substrate == "Fungus" ~ 122,
+    fixed_substrate == "Vegetation" ~ 83),
     no_ct = tot_sub-worm_per_substrate,
     ct = worm_per_substrate) %>%
   dplyr::select(fixed_substrate, no_ct, ct) %>%
@@ -293,11 +305,11 @@ FE_test_ct <- newdf %>%
 FE_test_cb <- newdf %>%
   dplyr::filter(species_family == "C. briggsae") %>%
   dplyr::mutate(tot_sub = case_when(
-    fixed_substrate == "Leaf litter" ~ 1480,
-    fixed_substrate == "Fruit/nut/veg" ~ 333,
+    fixed_substrate == "Leaf litter" ~ 1493,
+    fixed_substrate == "Fruit" ~ 327,
     fixed_substrate == "Flower" ~ 202,
-    fixed_substrate == "Fungus" ~ 121,
-    fixed_substrate == "Other" ~ 73),
+    fixed_substrate == "Fungus" ~ 122,
+    fixed_substrate == "Vegetation" ~ 83),
     no_cb = tot_sub-worm_per_substrate,
     cb = worm_per_substrate) %>%
   dplyr::select(fixed_substrate, no_cb, cb) %>%
@@ -335,7 +347,7 @@ cor_test_df <- data1 %>%
   dplyr::filter(species_id %in% c("C. elegans", "C. tropicalis", "C. briggsae",  "C. oiwi"))  %>%
   dplyr::distinct(c_label, species_id, .keep_all = T) %>%
   dplyr::select(species_id, fixed_substrate, approximate_number_of_worms) %>%
-  dplyr::mutate(fixed_substrate = factor(fixed_substrate, levels = c("Leaf litter", "Flower", "Fruit/nut/veg", "Fungus",  "Other")),
+  dplyr::mutate(fixed_substrate = factor(fixed_substrate, levels = c("Leaf litter", "Flower", "Fruit", "Fungus",  "Vegetation")),
                 fixed_substrate1 = as.numeric(fixed_substrate),
                 approx_pop = factor(approximate_number_of_worms, levels = c("Very Few (1-3)", "Few (4-10)", "Some (11-25)", "Proliferating (25+)")),
                 approx_pop1 = as.numeric(approx_pop),
@@ -350,12 +362,19 @@ cor_test_df_flvsll_test
 
 # setup test levels for co and do test inside of dataframe
 cor_test_df_fnvvsfl_test <- cor_test_df %>%
-  dplyr::mutate(fixed_substrate = factor(fixed_substrate, levels = c("Fruit/nut/veg", "Flower", "Leaf litter", "Fungus",  "Other")), # reorder for cor test between fruit and flower 
+  dplyr::mutate(fixed_substrate = factor(fixed_substrate, levels = c("Fruit", "Flower", "Leaf litter", "Fungus",  "Vegetation")), # reorder for cor test between fruit and flower 
                 fixed_substrate1 = as.numeric(fixed_substrate)) %>%
-  dplyr::filter(fixed_substrate %in% c("Fruit/nut/veg", "Flower"))%>%
+  dplyr::filter(fixed_substrate %in% c("Fruit", "Flower"))%>%
   dplyr::group_by(species_id) %>%
   dplyr::do(broom::tidy(cor.test(.$fixed_substrate1, .$approx_pop2, alternative = "g")))
 cor_test_df_fnvvsfl_test
+
+# Testing fractions in results section
+isolation_success <- worms %>%
+  dplyr::filter(!(plot_type %in% c("Tracks only", "No nematode"))) %>%
+  dplyr::group_by(fixed_substrate) %>%
+  dplyr::mutate(suc_rate = sum(perc_worm_sub))
+
 
 # Write data for submission
 # #2A

@@ -13,15 +13,13 @@ data1 <- data.table::fread("data/Supplemental Data 1.tsv")
 #======================#
 # Supplemental Table 1 #
 #======================#
-
 # Species by island
 Supp_table1 <- data1 %>%
-  dplyr::mutate(plot_type = ifelse(worms_on_sample %in% c("No","?"), "No Worm",
-                                   ifelse(is.na(species_id), "Not genotyped",
-                                          ifelse(pcr_positive == 0, "PCR -",
-                                                 ifelse(species_id == "Unknown", "Not genotyped",
-                                                        species_id))))) %>%
-  dplyr::distinct(c_label, plot_type, .keep_all = T) %>% 
+  dplyr::mutate(plot_type = ifelse(worms_on_sample %in% c("No", "?"), "No Nematode",
+                                         ifelse(worms_on_sample == "Tracks", "Tracks only",
+                                                ifelse((worms_on_sample == "Yes" & is.na(pcr_positive) | (pcr_positive == 1 & species_id == "Unknown")), "Not genotyped",
+                                                       ifelse(worms_on_sample == "Yes" & pcr_positive == 0, "PCR -", species_id))))) %>%
+  dplyr::distinct(c_label, plot_type, .keep_all = T) %>%
   dplyr::mutate(plot_type = forcats::as_factor(plot_type),
                 plot_type = forcats::fct_relevel(plot_type,
                                                  "C. elegans",
@@ -39,7 +37,8 @@ Supp_table1 <- data1 %>%
                                                  "Heterhabditis zealandica",
                                                  "PCR -",
                                                  "Not genotyped",
-                                                 "No Worm")) %>%
+                                                 "Tracks only",
+                                                 "No Nematode")) %>%
   dplyr::arrange(desc(plot_type)) %>%
   dplyr::rename(collection_category = plot_type) %>%
   dplyr::group_by(collection_category, island) %>%
@@ -47,11 +46,59 @@ Supp_table1 <- data1 %>%
   tidyr::spread(island, worm_isolates, fill=0) %>%
   janitor::adorn_totals('row') %>%
   janitor::adorn_totals('col') %>%
-  readr::write_tsv("data/elife_files/supp-table1.tsv")
+  readr::write_csv("data/elife_files/supp-table1-data1.csv")
 
 fractions <- Supp_table1 %>%
   dplyr::mutate(all_samples = 2263,
                 perc_total = (Total/all_samples)*100)
+
+# Make table for isolates not collections
+Suppl_table_X <- data1 %>%
+  dplyr::mutate(collection_type = ifelse(worms_on_sample %in% c("No", "?"), "No Nematode",
+                                         ifelse(worms_on_sample == "Tracks", "Tracks only",
+                                                ifelse(worms_on_sample == "Yes" & is.na(pcr_positive), "Not genotyped",
+                                                       ifelse(worms_on_sample == "Yes" & pcr_positive == 0, "PCR -",
+                                                              ifelse(species_id %in% c("Chabertia ovina",
+                                                                                       "Choriorhabditis cristata",
+                                                                                       "Choriorhabditis sp.",
+                                                                                       "Heterhabditis zealandica",
+                                                                                       "Mesorhabditis sp.",
+                                                                                       "no match",
+                                                                                       "C. kamaaina",
+                                                                                       "Rhabditis terricola",
+                                                                                       "Rhanditis tericola",
+                                                                                       "Teratorhabditis sp.",
+                                                                                       "Unknown",
+                                                                                       "unknown",
+                                                                                       "Oscheius sp.",
+                                                                                       "Panagrolaimus sp.",
+                                                                                       NA),
+                                                                     "Other PCR +", species_id)))))) %>%
+  dplyr::mutate(collection_type = forcats::as_factor(collection_type),
+                collection_type = forcats::fct_relevel(collection_type,
+                                                       "C. elegans",
+                                                       "C. oiwi",
+                                                       "C. tropicalis",
+                                                       "C. briggsae",
+                                                       "Other PCR +",
+                                                       "PCR -",
+                                                       "Not genotyped",
+                                                       "Tracks only",
+                                                       "No Nematode")) %>%
+  dplyr::distinct(s_label, .keep_all = T) %>%
+  dplyr::filter(!is.na(s_label)) %>%
+  dplyr::select(species_id, collection_type, island) %>%
+  #group_by(collection_type) %>%
+  #dplyr::mutate(count = n()) %>%
+  #dplyr::distinct(count, .keep_all = T) %>%
+  #dplyr::select(collection_type, count) %>%
+  dplyr::arrange(desc(collection_type)) %>%
+  dplyr::rename(`Isolation category` = collection_type) %>%
+  dplyr::group_by(`Isolation category`, island) %>%
+  dplyr::summarize(count=as.integer(n())) %>%
+  tidyr::spread(island, count, fill=0) %>%
+  janitor::adorn_totals('row') %>%
+  janitor::adorn_totals('col') # %>% readr::write_tsv("data/elife_files/supp-tableX.csv")
 
 # Island enrichment analysis
 # shape data for analysis for each Caenorhabditis species
@@ -156,13 +203,13 @@ data1 %>%
 
 data1 %>% 
   dplyr::group_by(c_label) %>%
-  dplyr::filter(!is.na(spp_id)) %>%
-  dplyr::distinct(c_label, spp_id) %>%
+  dplyr::filter(!is.na(species_id)) %>%
+  dplyr::distinct(c_label, species_id) %>%
   dplyr::mutate(n = n()) %>%
   dplyr::filter(n >= 2) %>%
-  tidyr::nest(spp_id, .key = "species") %>%
-  dplyr::mutate(has_unknown = purrr::map_lgl(species,  ~ "Unknown" %in% .x$spp_id)) %>%
-  dplyr::mutate(n_species = purrr::map_int(species, ~ length(.x$spp_id))) %>% 
+  tidyr::nest(species_id, .key = "species") %>%
+  dplyr::mutate(has_unknown = purrr::map_lgl(species,  ~ "Unknown" %in% .x$species_id)) %>%
+  dplyr::mutate(n_species = purrr::map_int(species, ~ length(.x$species_id))) %>% 
   dplyr::select(has_unknown) %>% table()
 
 

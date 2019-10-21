@@ -1,21 +1,21 @@
 species_family,fixed_substrate,perc_worm_sub2
-C. elegans,Other,1.36986301369863
-C. tropicalis,Other,1.36986301369863
-C. briggsae,Other,1.36986301369863
-C. briggsae,Fungus,4.132231404958678
-C. elegans,Fruit/nut/veg,3.6036036036036037
-C. oiwi,Fruit/nut/veg,0.9009009009009009
-C. tropicalis,Fruit/nut/veg,1.2012012012012012
-C. briggsae,Fruit/nut/veg,4.2042042042042045
+C. elegans,Vegetation,1.2048192771084338
+C. tropicalis,Vegetation,1.2048192771084338
+C. briggsae,Vegetation,1.2048192771084338
+C. briggsae,Fungus,4.098360655737705
+C. elegans,Fruit,3.669724770642202
+C. oiwi,Fruit,0.9174311926605505
+C. tropicalis,Fruit,1.2232415902140672
+C. briggsae,Fruit,4.281345565749235
 C. elegans,Flower,1.9801980198019802
 C. oiwi,Flower,4.455445544554455
 C. tropicalis,Flower,2.4752475247524752
 C. briggsae,Flower,10.396039603960396
-C. elegans,Leaf litter,1.418918918918919
-C. tropicalis,Leaf litter,0.20270270270270271
-C. briggsae,Leaf litter,3.445945945945946
+C. elegans,Leaf litter,1.406563965170797
+C. tropicalis,Leaf litter,0.20093770931011384
+C. briggsae,Leaf litter,3.415941058271936
 C. tropicalis,Fungus,0
-C. oiwi,Other,0
+C. oiwi,Vegetation,0
 C. oiwi,Leaf litter,0
 C. oiwi,Fungus,0
 C. elegans,Fungus,0

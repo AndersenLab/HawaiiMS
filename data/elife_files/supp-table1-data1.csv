@@ -1,4 +1,4 @@
-﻿collection_category,Big Island,Kauai,Maui,Molokai,Oahu,Total
+collection_category,Big Island,Kauai,Maui,Molokai,Oahu,Total
 C. elegans,31,1,5,1,0,38
 C. oiwi,1,3,0,0,8,12
 C. tropicalis,5,3,3,0,2,13
@@ -13,6 +13,7 @@ Mesorhabditis sp.,1,0,0,0,0,1
 Chabertia ovina,1,0,0,0,0,1
 Heterhabditis zealandica,1,0,0,0,0,1
 PCR -,272,246,111,22,32,683
-Not genotyped,343,296,239,42,38,958
-No Worm,124,407,129,23,29,712
+Not genotyped,150,207,123,19,28,527
+Tracks only,193,89,116,23,10,431
+No Nematode,124,407,129,23,29,712
 Total,834,1028,523,90,119,2594
