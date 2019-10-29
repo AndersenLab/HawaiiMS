@@ -364,8 +364,7 @@ df <- df %>% dplyr::rowwise() %>%
 substrate_merge <- c("Fruit",
                      "Rotting fruit",
                      "Nut",
-                     "Rotting nut")#,
-                     #"Rotting vegetable")
+                     "Rotting nut")
 
 df <- df %>% dplyr::ungroup() %>%
   dplyr::mutate(substrate = ifelse(substrate %in% substrate_merge, "Fruit/nut/vegetable", substrate)) %>%
@@ -642,3 +641,44 @@ cso %>%
                                                               "Vegetation",
                                                               ifelse(substrate %in% c("Isopod", "Millipede", "Slug"), "Invertebrate", substrate)))))) %>%
   readr::write_tsv("data/Supplemental Data 1.tsv")
+
+# # Write elife supplemental data 1
+# cso %>%
+#   dplyr::select(isotype,
+#                 strain,
+#                 c_label,
+#                 s_label,
+#                 worms_on_sample,
+#                 approximate_number_of_worms,
+#                 latitude,
+#                 longitude,
+#                 island,
+#                 substrate,
+#                 landscape,
+#                 sky_view,
+#                 gridsect,
+#                 gridsect_number = grid_num,
+#                 gridsect_direction,
+#                 gridsect_radius,
+#                 substrate_temperature,
+#                 substrate_moisture,
+#                 ambient_humidity, 
+#                 ambient_temperature,
+#                 altitude,
+#                 date,
+#                 time,
+#                 pcr_positive = pcr_rhpositive,
+#                 species_id = spp_id,
+#                 photo_url_thumb) %>%
+#   dplyr::mutate(species_id = ifelse(species_id == "C. sp. 53", "C. oiwi", species_id)) %>%
+#   dplyr::mutate(fixed_substrate = ifelse(substrate == "Fruit/nut/vegetable", "Fruit",
+#                                          ifelse(substrate == "Rotting flower", "Flower",
+#                                                 ifelse(substrate == "Rotting fungus", "Fungus",
+#                                                        ifelse(substrate %in% c("Rotting wood",
+#                                                                                "Compost",
+#                                                                                "Soil",
+#                                                                                "Grass"), 
+#                                                               "Vegetation",
+#                                                               ifelse(substrate %in% c("Isopod", "Millipede", "Slug"), "Invertebrate", substrate)))))) %>%
+#   dplyr::select(-substrate) %>%
+#   readr::write_csv("data/elife_files/Supplemental_Data_1.csv")

@@ -140,25 +140,25 @@ system(glue::glue("bcftools view -s {strain_vector} {VCF_PATH} -Oz -o data/ANNOT
 # Generate nexus file, .nexus file is used for SplitsTree
 system(glue::glue("python scripts/vcf2phylip.py -i data/ANNOTATE_VCF/Hawaii.vcf.gz -m 43 --fasta --nexus --nexus-binary"))
 
-# Write data for submission
+# # Write data for submission
 # k3 <- admix_plots[[1]]
 # k3df <- as.data.frame(k3[1]) %>%
 #   dplyr::rename(isotypes = data.samples, cluster = data.cluster, frac_cluster = data.frac_cluster, max_frac = data.max_frac) %>%
 #   dplyr::select(-data.ordered_samples) %>%
 #   dplyr::mutate(K = 3)
-# k4 <- admix_plots[[1]]
+# k4 <- admix_plots[[2]]
 # k4df <- as.data.frame(k4[1]) %>%
 #   dplyr::rename(isotypes = data.samples, cluster = data.cluster, frac_cluster = data.frac_cluster, max_frac = data.max_frac) %>%
 #   dplyr::select(-data.ordered_samples) %>%
 #   dplyr::mutate(K = 4)
-# k5 <- admix_plots[[1]]
+# k5 <- admix_plots[[3]]
 # k5df <- as.data.frame(k5[1]) %>%
 #   dplyr::rename(isotypes = data.samples, cluster = data.cluster, frac_cluster = data.frac_cluster, max_frac = data.max_frac) %>%
 #   dplyr::select(-data.ordered_samples) %>%
 #   dplyr::mutate(K = 5)
-# #bind all dataframes
+# # bind all dataframes
 # rbind(k3df, k4df, k5df) %>%
 #   readr::write_csv('data/elife_files/supp-fig12-data1.csv')
-# #ADMIXTURE subsampling data for ploting cross validation (CV) error with Hawaiian isolates only
+# # ADMIXTURE subsampling data for ploting cross validation (CV) error with Hawaiian isolates only
 # k_summary %>%
 #   readr::write_csv('data/elife_files/supp-fig12-data2.csv')

@@ -35,10 +35,10 @@ species_palette <- c("C. elegans" = "#BE0032", #7
                      "No Worm" = "#222222") #2
 
 substrate_shapes <- c("Leaf litter" = 21,
-                      "Fruit/nut/vegetable"= 24,
-                      "Rotting flower"= 22,
+                      "Fruit"= 24,
+                      "Flower"= 22,
                       "Fungus"= 23,
-                      "Isopod"= 25)
+                      "Invertebrate"= 25)
 
 adjust_x <- function(x, n, rn) {
   
@@ -130,7 +130,7 @@ gridsect_list <- lapply(c(1:15, 17:21), function(x){
       geom_text(size= 8)
   } else {
     plot_gridsect(x, isotype) +
-      geom_point(aes(fill = isotype,  size = size_c,  shape = substrate), stroke = 0.3) +
+      geom_point(aes(fill = isotype,  size = size_c,  shape = fixed_substrate), stroke = 0.3) +
       scale_fill_manual("Isotypes", values = c(isotype_palette), drop = FALSE) +
       scale_shape_manual("Substrate", values = c(substrate_shapes), drop = FALSE)
   }
@@ -142,8 +142,8 @@ legend_isotypes <- get_legend(ggplot(isotype %>% dplyr::filter(isotype %in% name
                                 scale_fill_manual(values=c(isotype_palette)) +
                                 labs(fill = "isotypes"))
 
-legend_substrates <- get_legend(ggplot(isotype %>% dplyr::filter(!is.na(substrate)) %>% dplyr::mutate(substrate = factor(substrate, levels = names(substrate_shapes)))) +
-                                  geom_point(aes(x = substrate_temperature, y = substrate_temperature, shape = substrate)) +
+legend_substrates <- get_legend(ggplot(isotype %>% dplyr::filter(!is.na(fixed_substrate) & gridsect_number %in% c("1", "3")) %>% dplyr::mutate(fixed_substrate = factor(fixed_substrate, levels = names(substrate_shapes)))) +
+                                  geom_point(aes(x = substrate_temperature, y = substrate_temperature, shape = fixed_substrate)) +
                                   scale_shape_manual("substrates", values = c(substrate_shapes), drop = FALSE) +
                                   labs(shape = "substrates"))
 
@@ -272,17 +272,19 @@ num_isotypes_per_sample <- data1 %>%
   dplyr::filter(!is.na(s_label)) %>%
   dplyr::filter(!is.na(isotype)) %>%
   dplyr::distinct(c_label, isotype, .keep_all = TRUE) %>%
-  dplyr::select(isotype, species_id, c_label, s_label, substrate, latitude, longitude) %>%
+  dplyr::select(isotype, species_id, c_label, s_label, fixed_substrate, latitude, longitude) %>%
   dplyr::group_by(c_label) %>%
   dplyr::mutate(distinct_isotypes = n()) %>%
   dplyr::distinct(c_label, .keep_all=TRUE)
 
 # Write data files for submission
-# Collection data for gridsects with C. elegans isotypes 
+# Collection data for gridsects with C. elegans isotypes
 # isotype %>%
 #   dplyr::filter(gridsect_number %in% c(1,3)) %>%
+#   dplyr::select(-substrate) %>%
 #   readr::write_csv('data/elife_files/supp-fig3-data1.csv')
-# Collection data for Instances where two distinct isotypes were isolated from the same sample
+# # Collection data for Instances where two distinct isotypes were isolated from the same sample
 # data1 %>%
 #   dplyr::filter(s_label %in% isotypes_found_together$s_label) %>%
+#   dplyr::select(-substrate) %>%
 #   readr::write_csv('data/elife_files/supp-fig3-data2.csv')

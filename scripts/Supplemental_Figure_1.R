@@ -1,6 +1,7 @@
 #!/usr/bin/env Rscript
 # load necessary packages
 library(tidyverse)
+library(cowplot)
 
 # set working directory
 setwd(glue::glue("{dirname(rstudioapi::getActiveDocumentContext()$path)}/.."))
@@ -32,10 +33,10 @@ species_palette <- c("C. elegans" = "#BE0032", #7
                      "No Worm" = "#222222") #2
 
 substrate_shapes <- c("Leaf litter" = 21,
-                      "Fruit/nut/vegetable"= 24,
-                      "Rotting flower"= 22,
+                      "Fruit"= 24,
+                      "Flower"= 22,
                       "Fungus"= 23,
-                      "Isopod"= 25)
+                      "Invertebrate"= 25)
 
 adjust_x <- function(x, n, rn) {
   
@@ -146,7 +147,7 @@ gridsect_list_full <- lapply(c(1:15, 17:21), function(x){
       geom_text(size= 8)
   } else {
     plot_gridsect(x, sp) +
-      geom_point(aes(fill = plot_type,  size = size_c, shape = substrate), stroke = 0.3) +  # scale_shape_manual(values=c(3, 16, 17))+
+      geom_point(aes(fill = plot_type,  size = size_c, shape = fixed_substrate), stroke = 0.3) +  # scale_shape_manual(values=c(3, 16, 17))+
       scale_fill_manual("Species", values = c(species_palette), drop = FALSE) +
       scale_shape_manual("Substrate", values = c(substrate_shapes), drop = FALSE)
   }
@@ -161,8 +162,8 @@ legend_species <- get_legend(ggplot(sp %>% dplyr::filter(plot_type %in% names(sp
                                theme(legend.position = "bottom"))
   
 
-legend_substrates <- get_legend(ggplot(sp %>% dplyr::mutate(substrate = factor(substrate, levels = names(substrate_shapes)))) +
-                                  geom_point(aes(x = substrate_temperature, y = substrate_temperature, shape = substrate)) +
+legend_substrates <- get_legend(ggplot(sp %>% dplyr::mutate(fixed_substrate = factor(fixed_substrate, levels = names(substrate_shapes)))) +
+                                  geom_point(aes(x = substrate_temperature, y = substrate_temperature, shape = fixed_substrate)) +
                                   scale_shape_manual("substrates", values = c(substrate_shapes), drop = FALSE) +
                                   labs(shape = "substrates") +
                                   theme(legend.position = "bottom"))
@@ -173,10 +174,11 @@ Supp_Fig_1 <- cowplot::plot_grid(plot_grid(plotlist=gridsect_list_full, hjust = 
 
 cowplot::ggsave("plots/Supplemental Figure 1.pdf", width = 28.56, height = 25.2)
 
-# Make data files for submission
-# Collection categories and substrate types for gridsect samples
+# # Make data files for submission
+# # Collection categories and substrate types for gridsect samples
 # sp %>% dplyr::filter(plot_type %in% names(species_palette)) %>%
 #   dplyr::mutate(plot_type = factor(plot_type, levels = names(species_palette))) %>%
 #   dplyr::select(collection_category = plot_type, fixed_substrate, everything()) %>%
 #   dplyr::arrange(collection_category) %>%
+#   dplyr::select(-substrate) %>%
 #   readr::write_csv('data/elife_files/supp-fig1-data1.csv')

@@ -52,7 +52,7 @@ hm_hi1 <- data1 %>%
                 strain,
                 c_label,
                 s_label,
-                substrate,
+                substrate = fixed_substrate,
                 island,
                 altitude,
                 latitude,
@@ -77,24 +77,20 @@ hm_hi2 <- full_join(hm_hi1, old_hi_isolates)
 substrate_merge <- c("Fruit",
                      "Rotting fruit",
                      "Nut",
-                     "Rotting nut",
-                     "Rotting vegetable")
+                     "Rotting nut")
 
 # Correct substrates to major categories in manuscript
 hm_hi3 <- hm_hi2 %>% 
   dplyr::ungroup() %>%
-  dplyr::mutate(substrate = ifelse(substrate %in% substrate_merge, "Fruit/nut/vegetable", substrate)) %>%
-  dplyr::mutate(substrate = ifelse(substrate %in% c("Rotting fungus"), "Fungus", substrate)) %>%
-  dplyr::mutate(substrate = ifelse(is.na(substrate), "Other", substrate)) %>%
-  dplyr::mutate(fixed_substrate = ifelse(substrate == "Fruit/nut/vegetable", "Fruit/nut/veg",
-                                         ifelse(substrate == "Rotting flower", "Flower",
-                                                ifelse(substrate == "Rotting fungus", "Fungus",
-                                                       ifelse(substrate %in% c("Rotting wood",
-                                                                               "Rotting bark",
-                                                                               "Soil",
-                                                                               "Grass"), 
-                                                              "Other",substrate))))) %>%
+  dplyr::mutate(fixed_substrate = ifelse(substrate %in% c("Rotting fruit"), "Fruit",
+                                  ifelse(substrate == "Rotting flower", "Flower",
+                                               ifelse(substrate %in% c("Rotting wood",
+                                                                       "Rotting bark",
+                                                                       "Soil",
+                                                                       "Compost"), 
+                                                              "Vegetation", substrate)))) %>%
   dplyr::group_by(isotype) %>%
+  dplyr::select(-substrate) %>%
   dplyr::mutate(main_substrate = names(sort(summary(as.factor(fixed_substrate)), decreasing=T))[1]) %>% # find most common factor in group
   dplyr::ungroup()
 
@@ -229,7 +225,7 @@ ggplot(dist) +
   #geom_point()
   geom_histogram(binwidth = 1000)
 
-# extract all c_labels w/ c. elegans within 25 meters of another c_label w/ c. elegans 
+# extract all c_labels w/ c. elegans within 20 meters of another c_label w/ c. elegans 
 dist_filter <- dist %>%
   dplyr::filter(under20meters == TRUE) %>%
   dplyr::select(c_label, r_c_label) %>%
@@ -237,9 +233,8 @@ dist_filter <- dist %>%
   dplyr::distinct(value) %>%
   dplyr::rename(c_label = value)
 
-#Group populations F,H  as non-admixed populations and average env_par for isotypes on c_labels in manually assigned <25 meter clusters
+#Group populations F,H  as non-admixed populations and average env_par for isotypes on c_labels in manually assigned <20 meter clusters
 ass_stats_cont_dist_filtered_1 <- ass_stats_cont %>%
-  #dplyr::mutate(sub_pop2 = as.factor(ifelse(sub_pop %in% c("F","H"), "non_admixed", "Hawaiian Admixed"))) %>%
   dplyr::mutate(filter_20m = ifelse(c_label %in% dist_filter$c_label, TRUE, FALSE),
                 kalopa =filter_box(ass_stats_cont$long, ass_stats_cont$lat, c(-155.454909,20.02578,-155.430115,20.049951)),
                 volcano_1 =filter_box(ass_stats_cont$long, ass_stats_cont$lat, c(-155.2243537309,19.4221224043,-155.2216236884,19.424155)),   
@@ -260,7 +255,7 @@ ass_stats_cont_dist_filtered_1 <- ass_stats_cont %>%
 ass_stats_long <- ass_stats_long %>%
   dplyr::mutate(filtered = ifelse(c_label %in% dist_filter$c_label, 0, 1))
 
-# extract unique thinned values for each env_par, sub_pop2, geo_cluster
+# extract unique thinned values for each env_par, sub_pop, geo_cluster
 ass_stats_cont_dist_filtered <- ass_stats_cont_dist_filtered_1 %>%
   dplyr::distinct(env_par, sub_pop, geo_cluster, value_thinned, .keep_all = T)
 
@@ -352,11 +347,36 @@ Figure6
 
 ggsave("plots/Figure6.pdf", width = 7.5, height = 5, useDingbats=FALSE)
 
-# # Write data for admixture plot
+# Write data for admixture plot
 # long_admix_pops %>%
 #   dplyr::mutate(ordered_isotype = factor(isotype, levels = plot_order$isotype)) %>%
 #   readr::write_csv(., "data/elife_files/fig6-data1.csv")
 # 
 # # Write data for all environmental variables, stats were conducted on value_thinnned
 # ass_stats_cont_dist_filtered %>%
-#   readr::write_csv(., "data/elife_files/fig6-data2.csv")
+#  readr::write_csv(., "data/elife_files/fig6-data2.csv")
+
+# # p-values from statistical test
+# altitude <- Dunn_list_dist_filtered[[1]]
+# altitude <- altitude[[2]] %>%
+#   dplyr::mutate(env_par = "altitude")
+# 
+# ambient_temperature <- Dunn_list_dist_filtered[[2]] 
+# ambient_temperature <- ambient_temperature[[2]] %>%
+#   dplyr::mutate(env_par = "ambient_temperature")
+# 
+# substrate_temperature <- Dunn_list_dist_filtered[[3]]
+# substrate_temperature <- substrate_temperature[[2]]%>%
+#   dplyr::mutate(env_par = "substrate_temperature")
+# 
+# ambient_humidity <- Dunn_list_dist_filtered[[4]]
+# ambient_humidity <- ambient_humidity[[2]]%>%
+#   dplyr::mutate(env_par = "ambient_humidity")
+# 
+# susbtrate_moisture <- Dunn_list_dist_filtered[[5]]
+# susbtrate_moisture <- susbtrate_moisture[[2]] %>%
+#   dplyr::mutate(env_par = "susbtrate_moisture")
+# 
+# full_p <- rbind(altitude, ambient_temperature, substrate_temperature, ambient_humidity, susbtrate_moisture) %>%
+#   readr::write_csv(., "data/elife_files/fig6-data3.csv")
+ 

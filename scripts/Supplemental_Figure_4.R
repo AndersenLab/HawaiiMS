@@ -59,6 +59,3 @@ hi_tree <- ggtree(tree_pt_h,
 hi_tree
 
 ggsave(hi_tree, filename = "plots/Supplemental Figure 4.pdf", height = 5, width = 7.5)
-
-#write tree Rda file
-#save(hi_tree, file = "data/elife_files/supp-fig4-data1.Rda")

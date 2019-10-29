@@ -168,31 +168,29 @@ ggsave(hybrid_plot, filename = "plots/Supplemental Figure 7.pdf", width = 7.5, h
 # full_isolation_info %>%
 # readr::write_csv(., "data/elife_files/supp-fig7-data1.csv")
 
-# Temp
-# plot Hawaii hybrid
-world_plot <- ggplot()+ geom_map(data=world, map=world,
-                              aes(x=long, y=lat, map_id=region),
-                              color="black", fill="#E6E6E6", size=0.25)+
-  scale_fill_manual(values = ancestry.colours,name = "Population")+
-  theme_map()+
-  geom_point(aes(long, lat, fill = pop_assignment),
-             data=full_isolation_info %>% dplyr::filter(pop_assignment == "A") %>%
-               dplyr::mutate(pop_assignment = factor(pop_assignment, level = c("A", "D", "F", "G", "H", "I",
-                                                                               "J", "B", "C", "E", "K"))) %>%
-               dplyr::arrange(pop_assignment),
-             shape = 21, size = 3) +
-  theme(legend.position = "none") +
-  coord_quickmap()  # coord_quickmap keeps correct aspect ratio: xlim = c(-160,-155), ylim = c(19,22.3)
-  scale_bar(lon = -158.5, lat = 19, 
-            distance_lon = 100, distance_lat = 16, distance_legend = 32, 
-            dist_unit = "km", orientation = FALSE)
-
-world_plot2 <- world_plot + geom_scatterpie(aes(x=long, y=lat, r =5),
-                                      data=dplyr::filter(full_isolation_info, A > 0.05 & pop_assignment != "A"), cols=LETTERS[1:11], alpha = 0.8) 
-
-# filter to isotypes with > 5% pop A
-popA_admixed <- full_isolation_info %>% dplyr::filter(pop_assignment == "E" ) # & pop_assignment != "A"
-
-length(unique(popA$isotype))
-
-
+# # Temp
+# # plot Hawaii hybrid
+# world_plot <- ggplot()+ geom_map(data=world, map=world,
+#                               aes(x=long, y=lat, map_id=region),
+#                               color="black", fill="#E6E6E6", size=0.25)+
+#   scale_fill_manual(values = ancestry.colours,name = "Population")+
+#   theme_map()+
+#   geom_point(aes(long, lat, fill = pop_assignment),
+#              data=full_isolation_info %>% dplyr::filter(pop_assignment == "A") %>%
+#                dplyr::mutate(pop_assignment = factor(pop_assignment, level = c("A", "D", "F", "G", "H", "I",
+#                                                                                "J", "B", "C", "E", "K"))) %>%
+#                dplyr::arrange(pop_assignment),
+#              shape = 21, size = 3) +
+#   theme(legend.position = "none") +
+#   coord_quickmap()  # coord_quickmap keeps correct aspect ratio: xlim = c(-160,-155), ylim = c(19,22.3)
+#   scale_bar(lon = -158.5, lat = 19, 
+#             distance_lon = 100, distance_lat = 16, distance_legend = 32, 
+#             dist_unit = "km", orientation = FALSE)
+# 
+# world_plot2 <- world_plot + geom_scatterpie(aes(x=long, y=lat, r =5),
+#                                       data=dplyr::filter(full_isolation_info, A > 0.05 & pop_assignment != "A"), cols=LETTERS[1:11], alpha = 0.8) 
+# 
+# # filter to isotypes with > 5% pop A
+# popA_admixed <- full_isolation_info %>% dplyr::filter(pop_assignment == "E" ) # & pop_assignment != "A"
+# 
+# length(unique(popA$isotype))

@@ -113,8 +113,8 @@ ggplot(ggnetwork::ggnetwork(net), aes(x = x, y = y, xend = xend, yend = yend)) +
 
 ggsave('plots/Supplemental Figure 2.pdf', width = 7.5, height = 5)
 
-# Write data for submission
-# Instances where two distinct species were isolated from the same sample
+# # Write data for submission
+# # Instances where two distinct species were isolated from the same sample
 # data1 %>%
 #   dplyr::filter(c_label %in% species_found_together$c_label) %>%
 #   dplyr::distinct(c_label, .keep_all = T) %>%
